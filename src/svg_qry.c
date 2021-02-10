@@ -23,7 +23,6 @@ static double _generateTreeSVG(Tree arvore, FILE *file, PosicNo node, int height
         putSVGNode(file, *x, TREE_TOP_MARGIN + height * TREE_Y_SPACING, "", "nil");
         return xMin + TREE_X_SPACING * 2;
     }
-
     double xNe;
     double xMaxNe = _generateTreeSVG(arvore, file, getNe(arvore, node), height + 1, xMin, &xNe, describe);
 

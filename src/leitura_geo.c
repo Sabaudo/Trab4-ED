@@ -12,7 +12,6 @@
 #include"lista.h"
 #include"util.h"
 #include"quadTree.h"
-#include"svg.h"
 
 double densidade;
 
@@ -133,9 +132,6 @@ Posto posto;
             densidade = calculoDensidade(w_dd, h_dd, habitantes);
             percorrer_Quadra_dd(arvoreQuadra, getFirstElementTree(arvoreQuadra), x_dd, w_dd, y_dd, h_dd);
             densidadeQuadra = densidade/numQuadrasDentro;
-			    // printf("4contador%lf\n",densidade);
-        		// printf("4contador%lf\n",numQuadrasDentro);
-				// printf("4contador%lf\n",densidadeQuadra);
 		}
 	} 
 }

@@ -122,6 +122,7 @@ void svg_imprimir_poligono(FILE *arqsvg, double x, double y);
  */
 void anelDq(FILE *arqsvg, Elemento e, char tipo[], double r);
 
+<<<<<<< HEAD
 
 /*
  * Imprime um circulo no svg
@@ -141,6 +142,12 @@ void svg_imprimir_circulo_transparente(FILE *arqsvg, double x, double y, double 
  * Insere sombras no svg a partir de um retangulo passado
  * nao retorna nada
  */
+=======
+void svg_imprimir_circulo(FILE *arqsvg, double x, double y, double r, char corBorda[32], char corPreenchimento[32]);
+
+void svg_imprimir_circulo_transparente(FILE *arqsvg, double x, double y, double r, char corBorda[32], char corPreenchimento[32]);
+
+>>>>>>> 600afc673351a5099aedf4c5c72d16e4f5a5c6ca
 void svg_drop_shadow(FILE *arqsvg, double x, double y, double w, double h, char corSombra[32], char corBorda[32], char corPreench[32]);
 
 

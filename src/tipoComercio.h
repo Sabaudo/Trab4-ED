@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+<<<<<<< HEAD
 //TAD TIPO DE COMERCIO
 typedef void *TipoComercio;
 
@@ -26,6 +27,14 @@ char* getTipoComercioCodt (TipoComercio sType);
 /*
  * Retorna a descrição de um tipo de comercio
  */
+=======
+typedef void *TipoComercio;
+
+TipoComercio criarTipoComercio (char codt[], char descricao[]);
+
+char* getTipoComercioCodt (TipoComercio sType);
+
+>>>>>>> 600afc673351a5099aedf4c5c72d16e4f5a5c6ca
 char* getTipoComercioDesc (TipoComercio sType);
 
 #endif
