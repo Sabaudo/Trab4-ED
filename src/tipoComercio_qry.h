@@ -16,7 +16,6 @@
 #include "lista.h"
 #include  "./elementos/quadra.h"
 
-<<<<<<< HEAD
 /*
  * Realiza a consulta do comando eplg do .qry
  * Necessita do comando eplg ter sido chamado na leitura do .qry
@@ -92,29 +91,6 @@ void catac_comercio(FILE *aqrTxt, double x, double y, double r, HashTable comerc
  * Verifica se um ponto Point está dentro de um retangulo
  * Retorna true ou false
  */
-=======
-void consulta_eplg(FILE *aqrTxt, FILE *arqSvg, char *codt, HashTable comercios,double x, double y, double w, double h);
-
-bool verificacao_ponto(double x, double y, double w, double h, Point p);
-
-bool verificacao_ponto_circulo(double x, double y, double r, Point p);
-
-
-void consulta_catac(FILE *arqTxt, FILE *arqSvg, double x, double y, double r, Tree arvoreQuadra, Tree arvoreHidrante, Tree arvoroSemaforo, Tree arvoreRadioBase, HashTable moradores, HashTable comercios);
-
-void* catac_hidrante(FILE *arqTxt, double x, double y, double r, PosicNo aux, Tree arvoreHidrante, Lista removerHidrante);
-
-void* catac_semaforo(FILE *arqTxt, double x, double y, double r, PosicNo aux, Tree arvoreSemaforo, Lista removerSemaforo);
-
-void* catac_radioBase(FILE *arqTxt, double x, double y, double r, PosicNo aux, Tree arvoreRadioBase, Lista removerRadioBase);
-
-void* catac_quadra(FILE *arqTxt, double x, double y, double r, PosicNo aux, Tree arvoreQuadra, Lista removerQuadra);
-
-void catac_morador(FILE *aqrTxt, double x, double y, double r, HashTable moradores, Lista removerMorador, FILE *arqSvg);
-
-void catac_comercio(FILE *aqrTxt, double x, double y, double r, HashTable comercios, Lista removerComercio, FILE *arqSvg);
-
->>>>>>> 600afc673351a5099aedf4c5c72d16e4f5a5c6ca
 bool verificacao_ponto_retangulo(double x, double y, double r, Quadra quadra);
 
 
