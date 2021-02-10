@@ -1,0 +1,1476 @@
+[33mcommit c14262811333932c17bc0c4dccc9f8f9aa3cc887[m
+Author: gabriel <palmito-malhado@gabriel-PC.home>
+Date:   Wed Feb 10 14:14:51 2021 -0200
+
+    adding comments
+
+[1mdiff --git a/LEIA-ME.txt b/LEIA-ME.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cbc20cb[m
+[1m--- /dev/null[m
+[1m+++ b/LEIA-ME.txt[m
+[36m@@ -0,0 +1,5 @@[m
+[32m+[m[32m201800560073[m
+[32m+[m[32mGabriel Angelo Perez Gasparini Sabaudo[m
+[32m+[m
+[32m+[m[32m201800560095[m
+[32m+[m[32mGuilherme Henrique Goncalves Silva[m
+\ No newline at end of file[m
+[1mdiff --git a/src/.idea/.gitignore b/src/.idea/.gitignore[m
+[1mnew file mode 100644[m
+[1mindex 0000000..73f69e0[m
+[1m--- /dev/null[m
+[1m+++ b/src/.idea/.gitignore[m
+[36m@@ -0,0 +1,8 @@[m
+[32m+[m[32m# Default ignored files[m
+[32m+[m[32m/shelf/[m
+[32m+[m[32m/workspace.xml[m
+[32m+[m[32m# Datasource local storage ignored files[m
+[32m+[m[32m/dataSources/[m
+[32m+[m[32m/dataSources.local.xml[m
+[32m+[m[32m# Editor-based HTTP Client requests[m
+[32m+[m[32m/httpRequests/[m
+[1mdiff --git a/src/.idea/misc.xml b/src/.idea/misc.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5618918[m
+[1m--- /dev/null[m
+[1m+++ b/src/.idea/misc.xml[m
+[36m@@ -0,0 +1,22 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<project version="4">[m
+[32m+[m[32m  <component name="ExternalStorageConfigurationManager" enabled="true" />[m
+[32m+[m[32m  <component name="MakefileSettings">[m
+[32m+[m[32m    <option name="linkedExternalProjectsSettings">[m
+[32m+[m[32m      <MakefileProjectSettings>[m
+[32m+[m[32m        <option name="analyzerType" value="OUTPUT_PARSING" />[m
+[32m+[m[32m        <option name="buildOptions" value="" />[m
+[32m+[m[32m        <option name="buildTarget" value="all" />[m
+[32m+[m[32m        <option name="cleanTarget" value="clean" />[m
+[32m+[m[32m        <option name="externalProjectPath" value="$PROJECT_DIR$" />[m
+[32m+[m[32m        <option name="modules">[m
+[32m+[m[32m          <set>[m
+[32m+[m[32m            <option value="$PROJECT_DIR$" />[m
+[32m+[m[32m          </set>[m
+[32m+[m[32m        </option>[m
+[32m+[m[32m        <option name="switches" value="--just-print --print-directory --keep-going" />[m
+[32m+[m[32m      </MakefileProjectSettings>[m
+[32m+[m[32m    </option>[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="MakefileWorkspace" PROJECT_DIR="$PROJECT_DIR$" />[m
+[32m+[m[32m</project>[m
+\ No newline at end of file[m
+[1mdiff --git a/src/.idea/modules.xml b/src/.idea/modules.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f669a0e[m
+[1m--- /dev/null[m
+[1m+++ b/src/.idea/modules.xml[m
+[36m@@ -0,0 +1,8 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<project version="4">[m
+[32m+[m[32m  <component name="ProjectModuleManager">[m
+[32m+[m[32m    <modules>[m
+[32m+[m[32m      <module fileurl="file://$PROJECT_DIR$/.idea/src.iml" filepath="$PROJECT_DIR$/.idea/src.iml" />[m
+[32m+[m[32m    </modules>[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m</project>[m
+\ No newline at end of file[m
+[1mdiff --git a/src/.idea/src.iml b/src/.idea/src.iml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5f9c3ad[m
+[1m--- /dev/null[m
+[1m+++ b/src/.idea/src.iml[m
+[36m@@ -0,0 +1,2 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<module classpath="External" external.linked.project.id="src" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="Makefile" type="CPP_MODULE" version="4" />[m
+\ No newline at end of file[m
+[1mdiff --git a/src/.vscode/launch.json b/src/.vscode/launch.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f22f77f[m
+[1m--- /dev/null[m
+[1m+++ b/src/.vscode/launch.json[m
+[36m@@ -0,0 +1,29 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m    // Use IntelliSense to learn about possible attributes.[m
+[32m+[m[32m    // Hover to view descriptions of existing attributes.[m
+[32m+[m[32m    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387[m
+[32m+[m[32m    "version": "0.2.0",[m
+[32m+[m[32m    "configurations": [[m
+[32m+[m[32m        {[m
+[32m+[m[32m            "name": "gcc-6 - Criar e depurar o arquivo ativo",[m
+[32m+[m[32m            "type": "cppdbg",[m
+[32m+[m[32m            "request": "launch",[m
+[32m+[m[32m            "program": "${fileDirname}/${fileBasenameNoExtension}",[m
+[32m+[m[32m            "args": [],[m
+[32m+[m[32m            "stopAtEntry": false,[m
+[32m+[m[32m            "cwd": "${workspaceFolder}",[m
+[32m+[m[32m            "environment": [],[m
+[32m+[m[32m            "externalConsole": false,[m
+[32m+[m[32m            "MIMode": "gdb",[m
+[32m+[m[32m            "setupCommands": [[m
+[32m+[m[32m                {[m
+[32m+[m[32m                    "description": "Habilitar a reformatação automática para gdb",[m
+[32m+[m[32m                    "text": "-enable-pretty-printing",[m
+[32m+[m[32m                    "ignoreFailures": true[m
+[32m+[m[32m                }[m
+[32m+[m[32m            ],[m
+[32m+[m[32m            "preLaunchTask": "C/C++: gcc-6 build active file",[m
+[32m+[m[32m            "miDebuggerPath": "/usr/bin/gdb"[m
+[32m+[m[32m        }[m
+[32m+[m[32m    ][m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/src/.vscode/tasks.json b/src/.vscode/tasks.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a5661cc[m
+[1m--- /dev/null[m
+[1m+++ b/src/.vscode/tasks.json[m
+[36m@@ -0,0 +1,26 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m    "tasks": [[m
+[32m+[m[32m        {[m
+[32m+[m[32m            "type": "shell",[m
+[32m+[m[32m            "label": "C/C++: gcc-6 build active file",[m
+[32m+[m[32m            "command": "/usr/bin/gcc-6",[m
+[32m+[m[32m            "args": [[m
+[32m+[m[32m                "-g",[m
+[32m+[m[32m                "${file}",[m
+[32m+[m[32m                "-o",[m
+[32m+[m[32m                "${fileDirname}/${fileBasenameNoExtension}"[m
+[32m+[m[32m            ],[m
+[32m+[m[32m            "options": {[m
+[32m+[m[32m                "cwd": "${workspaceFolder}"[m
+[32m+[m[32m            },[m
+[32m+[m[32m            "problemMatcher": [[m
+[32m+[m[32m                "$gcc"[m
+[32m+[m[32m            ],[m
+[32m+[m[32m            "group": {[m
+[32m+[m[32m                "kind": "build",[m
+[32m+[m[32m                "isDefault": true[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m[32m    ],[m
+[32m+[m[32m    "version": "2.0.0"[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/src/Makefile b/src/Makefile[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b800e87[m
+[1m--- /dev/null[m
+[1m+++ b/src/Makefile[m
+[36m@@ -0,0 +1,17 @@[m
+[32m+[m[32mCC = gcc[m
+[32m+[m[32mCOMPILER_FLAGS = -std=c99 -fstack-protector-all -g[m
+[32m+[m[32mLINKER_FLAGS = -lm[m[41m [m
+[32m+[m[32mEXEC_NAME = siguel[m
+[32m+[m[32mOBJECTS = main.o argumentos.o arquivos.o leitura_geo.o svg.o leitura_gry.o consultas.o util.o elementos/quadra.o lista.o  elementos/texto.o  elementos/hidrante.o elementos/semaforo.o elementos/radioBase.o elementos/forma.o elementos/posto.o elementos/casos.o elementos/casosDentro.o shell_sort.o quick_sort.o quadTree.o pessoa.o comercio.o hashTable.o tipoComercio.o moradores.o leitura_ec.o leitura_pm.o moradores_qry.o comercio_qry.o ponto.o tipoComercio_qry.o svg_qry.o[m
+[32m+[m
+[32m+[m[32mall: $(EXEC_NAME)[m
+[32m+[m[32m$(OBJECTS): %.o : %.c[m
+[32m+[m		[32mgcc -g -c $< -o $@[m
+[32m+[m
+[32m+[m[32msiguel: $(OBJECTS)[m[41m [m
+[32m+[m		[32m$(CC) $(OBJECTS) $(COMPILER_FLAGS) $(LINKER_FLAGS) -o $(EXEC_NAME)[m
+[32m+[m
+[32m+[m[32mclean:[m
+[32m+[m		[32mrm -rf *.o siguel[m[41m [m
+[32m+[m		[32mrm -rf saida/*.txt[m
+[32m+[m		[32mrm -rf saida/*.svg[m
+[1mdiff --git a/src/argumentos.c b/src/argumentos.c[m
+[1mnew file mode 100644[m
+[1mindex 0000000..97a2f50[m
+[1m--- /dev/null[m
+[1m+++ b/src/argumentos.c[m
+[36m@@ -0,0 +1,43 @@[m
+[32m+[m[32m#include"argumentos.h"[m
+[32m+[m
+[32m+[m[32m//Função que verifica se um arquivo abriu corretamente ou apresentou algum erro na abertura[m
+[32m+[m
+[32m+[m[32mvoid verificarArquivo(FILE *arq, char *nomeArquivo ){[m
+[32m+[m[32m    if(arq == NULL){[m
+[32m+[m[32m        printf("Erro na abertura do arquivo %s.\n",nomeArquivo);[m
+[32m+[m[32m        exit(1);[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m//Função que trata o nome dos arquivos[m
+[32m+[m
+[32m+[m[32mchar * tratarNome(char nomeArq[], char * nomeArqAux){[m
+[32m+[m[32mint i = 0, aux;[m
+[32m+[m[32mbool valid = false;[m
+[32m+[m[32mnomeArqAux = (char*) malloc ((strlen(nomeArq) +2 ) * sizeof(char));[m
+[32m+[m
+[32m+[m	[32mwhile(1){[m
+[32m+[m		[32mif (nomeArq[i] == '/'){[m
+[32m+[m			[32maux = i;[m
+[32m+[m			[32mvalid = true;[m
+[32m+[m		[32m}[m
+[32m+[m		[32melse if (nomeArq[i] == '.' && i != 0){[m
+[32m+[m			[32mif (valid){[m
+[32m+[m				[32maux++;[m
+[32m+[m					[32mbreak;[m
+[32m+[m			[32m}[m
+[32m+[m			[32melse {[m
+[32m+[m				[32mstrcpy(nomeArqAux, nomeArq);[m
+[32m+[m					[32mreturn nomeArqAux;[m
+[32m+[m			[32m}[m
+[32m+[m		[32m}[m
+[32m+[m		[32mi++;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mi = 0;[m
+[32m+[m	[32mwhile(nomeArq[i] != '\0'){[m
+[32m+[m		[32mnomeArqAux[i] = nomeArq[aux];[m
+[32m+[m		[32mi++;[m
+[32m+[m		[32maux++;[m
+[32m+[m	[32m}[m
+[32m+[m[32mreturn nomeArqAux;[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/src/argumentos.h b/src/argumentos.h[m
+[1mnew file mode 100644[m
+[1mindex 0000000..33be0c1[m
+[1m--- /dev/null[m
+[1m+++ b/src/argumentos.h[m
+[36m@@ -0,0 +1,23 @@[m
+[32m+[m[32m#ifndef _ARGUMENTOS_H_[m
+[32m+[m[32m#define _ARQUMENTOS_H_[m
+[32m+[m
+[32m+[m[32m#include<stdio.h>[m
+[32m+[m[32m#include<stdlib.h>[m
+[32m+[m[32m#include<string.h>[m
+[32m+[m[32m#include<stdbool.h>[m[41m [m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m*   verifica se um arquivo abriu corretamente ou apresentou algum erro na abertura.[m
+[32m+[m[32m*   necessita de um arquivo criado[m
+[32m+[m[32m*   nao retorna nada[m
+[32m+[m[32m*/[m
+[32m+[m[32mvoid verificarArquivo(FILE *arq, char *nomeArquivo);[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m*   verifica o nome dos arquivos .geo e .qry[m
+[32m+[m[32m*   necessita de um arquivo .geo ou .qry terem sido identificados[m
+[32m+[m[32m*   retorna o nome do arquivo pós tratamento[m
+[32m+[m[32m*/[m[41m [m
+[32m+[m[32mchar *tratarNome(char nomeArq[], char * nomeArqAux);[m
+[32m+[m
+[32m+[m[32m#endif[m[41m [m
+\ No newline at end of file[m
+[1mdiff --git a/src/arquivos.c b/src/arquivos.c[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1c8030c[m
+[1m--- /dev/null[m
+[1m+++ b/src/arquivos.c[m
+[36m@@ -0,0 +1,137 @@[m
+[32m+[m[32m#include"arquivos.h"[m
+[32m+[m
+[32m+[m[32m//Função que cria o arquivo .svg no diretório de saída[m
+[32m+[m
+[32m+[m[32mchar * criarSvg(char entradaGeoNew[], char diretorioSaida[], char *arqsvg){[m
+[32m+[m[32mint i = 0;[m
+[32m+[m
+[32m+[m[32mchar *entradaSvg = (char *)malloc((strlen(entradaGeoNew) + 1) * sizeof(char));[m
+[32m+[m
+[32m+[m[32m    while(entradaGeoNew[i] != '.'){[m
+[32m+[m		[32mentradaSvg[i] = entradaGeoNew[i];[m
+[32m+[m		[32mi++;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    entradaSvg[i] = '\0';[m
+[32m+[m[32m    strcat(entradaSvg,".svg");[m
+[32m+[m
+[32m+[m[32m    if(diretorioSaida[strlen(diretorioSaida) - 1] == '/'){[m
+[32m+[m[32m        arqsvg = (char *) malloc ((strlen(entradaSvg) + strlen(diretorioSaida) + 1) * sizeof(char));[m
+[32m+[m[32m        sprintf(arqsvg, "%s%s", diretorioSaida, entradaSvg);[m
+[32m+[m[41m    [m
+[32m+[m[32m    }[m
+[32m+[m[32m    else{[m
+[32m+[m[32m        arqsvg = (char *) malloc ((strlen(entradaSvg) + strlen(diretorioSaida) + 2) * sizeof(char));[m
+[32m+[m[32m        sprintf(arqsvg, "%s/%s", diretorioSaida, entradaSvg);[m
+[32m+[m[32m    }[m
+[32m+[m[32m    free(entradaSvg);[m
+[32m+[m[32mreturn arqsvg;[m[41m [m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m//Funcao que cria um segundo arquivo .svg no diretorio de saida[m[41m [m
+[32m+[m
+[32m+[m[32mchar * criarSvg2(char entradaGeoNew[], char entradaQryNew[], char diretorioSaida[], char *arqsvg2){[m
+[32m+[m[32mint i = 0,j = 0;[m
+[32m+[m[32mchar *entradaSvg2 = NULL;[m
+[32m+[m
+[32m+[m[32mentradaSvg2 = (char *)malloc((strlen(entradaGeoNew) + strlen(entradaQryNew) + 1) * sizeof(char));[m
+[32m+[m
+[32m+[m[32m    while(entradaGeoNew[i] != '.'){[m
+[32m+[m		[32mentradaSvg2[i] = entradaGeoNew[i];[m
+[32m+[m		[32mi++;[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m    entradaSvg2[i] = '\0';[m
+[32m+[m
+[32m+[m[32m    strcat(entradaSvg2, "-");[m
+[32m+[m	[32mi = i +1;[m
+[32m+[m
+[32m+[m	[32mwhile(entradaQryNew[j] != '.'){[m
+[32m+[m		[32mentradaSvg2[i] = entradaQryNew[j];[m
+[32m+[m		[32mj++;[m
+[32m+[m		[32mi++;[m
+[32m+[m	[32m}[m
+[32m+[m[32m    entradaSvg2[i] = '\0';[m
+[32m+[m
+[32m+[m[32m    strcat(entradaSvg2,".svg");[m
+[32m+[m
+[32m+[m[32m    if(diretorioSaida[strlen(diretorioSaida) - 1] == '/'){[m
+[32m+[m[32m        arqsvg2 = (char *) malloc ((strlen(entradaSvg2) + strlen(diretorioSaida) + 1) * sizeof(char));[m
+[32m+[m[32m        sprintf(arqsvg2, "%s%s", diretorioSaida, entradaSvg2);[m
+[32m+[m[41m    [m
+[32m+[m[32m    }[m
+[32m+[m[32m    else{[m
+[32m+[m[32m        arqsvg2 = (char *) malloc ((strlen(entradaSvg2) + strlen(diretorioSaida) + 2) * sizeof(char));[m
+[32m+[m[32m        sprintf(arqsvg2, "%s/%s", diretorioSaida, entradaSvg2);[m
+[32m+[m[32m    }[m
+[32m+[m[32m    free(entradaSvg2);[m
+[32m+[m[32mreturn arqsvg2;[m[41m [m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m//Funcao que cria um terceiro arquivo .svg no diretorio de saida no comando dmprbt[m[41m [m
+[32m+[m
+[32m+[m[32mchar * criarSvg3(char entradaGeoNew[], char diretorioSaida[], char *arqsvg){[m
+[32m+[m[32mint i = 0;[m
+[32m+[m
+[32m+[m[32mchar *entradaSvg = (char *)malloc((strlen(entradaGeoNew) + 10) * sizeof(char));[m
+[32m+[m
+[32m+[m[32m    while(entradaGeoNew[i] != '\0'){[m
+[32m+[m		[32mentradaSvg[i] = entradaGeoNew[i];[m
+[32m+[m		[32mi++;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    entradaSvg[i] = '\0';[m
+[32m+[m[32m    strcat(entradaSvg,".svg");[m
+[32m+[m
+[32m+[m[32m    if(diretorioSaida[strlen(diretorioSaida) - 1] == '/'){[m
+[32m+[m[32m        arqsvg = (char *) malloc ((strlen(entradaSvg) + strlen(diretorioSaida) + 1) * sizeof(char));[m
+[32m+[m[32m        sprintf(arqsvg, "%s%s", diretorioSaida, entradaSvg);[m
+[32m+[m[41m    [m
+[32m+[m[32m    }[m
+[32m+[m[32m    else{[m
+[32m+[m[32m        arqsvg = (char *) malloc ((strlen(entradaSvg) + strlen(diretorioSaida) + 2) * sizeof(char));[m
+[32m+[m[32m        sprintf(arqsvg, "%s/%s", diretorioSaida, entradaSvg);[m
+[32m+[m[32m    }[m
+[32m+[m[32m    free(entradaSvg);[m
+[32m+[m[32mreturn arqsvg;[m[41m [m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m//Funcao que cria o .txt no diretório de saída[m
+[32m+[m
+[32m+[m[32mchar * criarTxt(char entradaGeoNew[], char entradaQryNew[],char diretorioSaida[], char *arqtxt){[m
+[32m+[m[32mchar * entradaTxt = NULL;[m
+[32m+[m[32mint i = 0, j = 0;[m
+[32m+[m[32mentradaTxt = (char*) malloc ((strlen(entradaGeoNew) + strlen(entradaQryNew) + 1) * sizeof(char));[m
+[32m+[m
+[32m+[m	[32mwhile (entradaGeoNew[i] != '.'){[m
+[32m+[m		[32mentradaTxt[i] = entradaGeoNew[i];[m
+[32m+[m		[32mi++;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m[32m    entradaTxt[i] = '\0';[m
+[32m+[m[41m	[m
+[32m+[m	[32mstrcat(entradaTxt, "-");[m[41m	[m
+[32m+[m	[32mi = i+1;[m
+[32m+[m
+[32m+[m	[32mwhile (entradaQryNew[j] != '.'){[m
+[32m+[m		[32mentradaTxt[i] = entradaQryNew[j];[m
+[32m+[m		[32mj++;[m
+[32m+[m		[32mi++;[m
+[32m+[m[41m        [m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m[32m    entradaTxt[i]='\0';[m
+[32m+[m	[32mstrcat(entradaTxt, ".txt");[m
+[32m+[m
+[32m+[m[32m    if(diretorioSaida[strlen(diretorioSaida) - 1] == '/'){[m
+[32m+[m[32m        arqtxt = (char *) malloc ((strlen(entradaTxt) + strlen(diretorioSaida) + 1) * sizeof(char));[m
+[32m+[m[32m        sprintf(arqtxt, "%s%s", diretorioSaida, entradaTxt);[m
+[32m+[m[41m    [m
+[32m+[m[32m    }[m
+[32m+[m[32m    else{[m
+[32m+[m[32m        arqtxt = (char *) malloc ((strlen(entradaTxt) + strlen(diretorioSaida) + 2) * sizeof(char));[m
+[32m+[m[32m        sprintf(arqtxt, "%s/%s", diretorioSaida, entradaTxt);[m
+[32m+[m[32m    }[m
+[32m+[m[32m    free(entradaTxt);[m
+[32m+[m[32m    return arqtxt;[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/src/arquivos.h b/src/arquivos.h[m
+[1mnew file mode 100644[m
+[1mindex 0000000..21444d7[m
+[1m--- /dev/null[m
+[1m+++ b/src/arquivos.h[m
+[36m@@ -0,0 +1,38 @@[m
+[32m+[m[32m#ifndef _ARQUIVOS_H_[m
+[32m+[m[32m#define _ARQUIVOS_H_[m
+[32m+[m
+[32m+[m[32m#include<stdio.h>[m
+[32m+[m[32m#include<stdlib.h>[m
+[32m+[m[32m#include<string.h>[m
+[32m+[m[32m#include<stdbool.h>[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m*   cria o arquivo .svg no diretório de saída[m
+[32m+[m[32m*   necessita de um arquivo .geo ter sido identificado na entrada[m
+[32m+[m[32m*   retorna o nome do arquivo svg[m
+[32m+[m[32m*/[m
+[32m+[m[32mchar * criarSvg(char entradaGeoNew[], char diretorioSaida[], char *arqsvg);[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m*   cria um segundo arquivo .svg no diretorio de saida[m
+[32m+[m[32m*   necessita de um arquivo .geo e .qry terem sido identificados na entrada[m
+[32m+[m[32m*   retorna o nome do arquivo svg final[m
+[32m+[m[32m*/[m[41m [m
+[32m+[m[32mchar * criarSvg2(char entradaGeoNew[], char entradaQryNew[], char diretorioSaida[], char *arqsvg2);[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m*   cria o .txt no diretório de saída[m
+[32m+[m[32m*   necessita de um arquivo .geo e .qry terem sido identificados na entrada[m
+[32m+[m[32m*   retorna o nome do arquivo de texto final[m
+[32m+[m[32m*/[m
+[32m+[m[32mchar * criarTxt(char entradaGeoNew [], char entradaQryNew[],char diretorioSaida[], char *arqtxt);[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m * cria e concatena o svg para o comando dmprbt, descrevendo visualmente a arvore[m
+[32m+[m[32m * necessita do comando dmprbt ter sido invocado[m
+[32m+[m[32m * retorna um arquivo svg[m
+[32m+[m[32m */[m
+[32m+[m[32mchar * criarSvg3(char entradaGeoNew[], char diretorioSaida[], char *arqsvg);[m
+[32m+[m
+[32m+[m
+[32m+[m[32m#endif[m[41m [m
+\ No newline at end of file[m
+[1mdiff --git a/src/cidade.c b/src/cidade.c[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/src/comercio.c b/src/comercio.c[m
+[1mnew file mode 100644[m
+[1mindex 0000000..faf8f2d[m
+[1m--- /dev/null[m
+[1m+++ b/src/comercio.c[m
+[36m@@ -0,0 +1,142 @@[m
+[32m+[m[32m#include"comercio.h"[m
+[32m+[m
+[32m+[m[32mtypedef struct stStore {[m
+[32m+[m[32m    char cnpj[32], cep[32], face[2], nome[32];[m
+[32m+[m[32m    int num;[m
+[32m+[m[32m    double x, y;[m
+[32m+[m[32m    TipoComercio storeType;[m
+[32m+[m[32m    Pessoa owner;[m
+[32m+[m[32m    Quadra block;[m
+[32m+[m[32m} *StoreImp;[m
+[32m+[m
+[32m+[m[32mComercio criarComercio (char cnpj[], char cpf[], char codt[], char cep[], char face[], int num, char nome[], HashTable storeTypes, HashTable persons, Quadra block){[m
+[32m+[m[32m    StoreImp store = (StoreImp) malloc (sizeof (struct stStore));[m
+[32m+[m
+[32m+[m[32m    double xB = getXQuadra(block), yB = getYQuadra(block), wB = getWQuadra(block), hB = getHQuadra(block);[m
+[32m+[m
+[32m+[m[32m    if(!strcmp(face, "N")){[m
+[32m+[m[32m        store->x = xB + num;[m
+[32m+[m[32m        store->y = yB + hB;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    else if(!strcmp(face, "S")){[m
+[32m+[m[32m        store->x = xB + num;[m
+[32m+[m[32m        store->y = yB;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    else if(!strcmp(face, "O")){[m
+[32m+[m[32m        store->x = xB + wB;[m
+[32m+[m[32m        store->y = yB + num;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    else if(!strcmp(face, "L")){[m
+[32m+[m[32m        store->x = xB;[m
+[32m+[m[32m        store->y = yB + num;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    strcpy (store->cnpj, cnpj);[m
+[32m+[m[32m    strcpy (store->cep, cep);[m
+[32m+[m[32m    strcpy (store->face, face);[m
+[32m+[m[32m    store->num = num;[m
+[32m+[m[32m    strcpy (store->nome, nome);[m
+[32m+[m
+[32m+[m[32m    bool found = false;[m
+[32m+[m[32m    for(int i = 0; i < getHashTableSize(storeTypes); i++){[m
+[32m+[m[32m        ListNode node = getHashNode(storeTypes, i);[m
+[32m+[m[32m        while(node != NULL){[m
+[32m+[m[32m            TipoComercio storeType = getHashNodeElement(node);[m
+[32m+[m
+[32m+[m[32m            if(!strcmp(codt, getTipoComercioCodt(storeType))){[m
+[32m+[m[32m                found = true;[m
+[32m+[m[32m                store->storeType = storeType;[m
+[32m+[m[32m                break;[m
+[32m+[m[32m            }[m
+[32m+[m[32m            node = getHashNodeNext(node);[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        if(found) break;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    found = false;[m
+[32m+[m[32m    for(int i = 0; i < getHashTableSize(persons); i++){[m
+[32m+[m[32m        ListNode node = getHashNode(persons, i);[m
+[32m+[m
+[32m+[m[32m        while(node != NULL){[m
+[32m+[m[32m            Pessoa person = getHashNodeElement(node);[m
+[32m+[m[32m            if(!strcmp(cpf, getPessoaCpf(person))){[m
+[32m+[m[32m                found = true;[m
+[32m+[m[32m                store->owner = person;[m
+[32m+[m[32m                break;[m
+[32m+[m[32m            }[m
+[32m+[m[32m            node = getHashNodeNext(node);[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        if(found) break;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    store->block = block;[m
+[32m+[m
+[32m+[m[32m    return store;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mchar* getComercioCnpj (Comercio s){[m
+[32m+[m[32m   StoreImp comercio = (StoreImp) s;[m
+[32m+[m
+[32m+[m[32m    return comercio->cnpj;[m
+[32m+[m[32m}[m[41m [m
+[32m+[m
+[32m+[m[32mchar* getComercioOwner (Comercio s){[m
+[32m+[m[32m   StoreImp comercio = (StoreImp) s;[m
+[32m+[m
+[32m+[m[32m    return comercio->owner;[m
+[32m+[m[32m}[m[41m   [m
+[32m+[m
+[32m+[m[32mchar* getComercioCep (Comercio s){[m
+[32m+[m[32m   StoreImp comercio = (StoreImp) s;[m
+[32m+[m
+[32m+[m[32m    return comercio->cep;[m
+[32m+[m[32m}[m[41m  [m
+[32m+[m[41m [m
+[32m+[m[32mchar* getComercioFace (Comercio s){[m
+[32m+[m[32m   StoreImp comercio = (StoreImp) s;[m
+[32m+[m
+[32m+[m[32m    return comercio->face;[m
+[32m+[m[32m}[m[41m [m
+[32m+[m
+[32m+[m[32mchar* getComercioName (Comercio s){[m
+[32m+[m[32m   StoreImp comercio = (StoreImp) s;[m
+[32m+[m
+[32m+[m[32m    return comercio->nome;[m
+[32m+[m[32m}[m[41m [m
+[32m+[m
+[32m+[m[32mint getComercioNum (Comercio s){[m
+[32m+[m[32m   StoreImp comercio = (StoreImp) s;[m
+[32m+[m
+[32m+[m[32m    return comercio->num;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mdouble getComercioX(Comercio s){[m
+[32m+[m[32m   StoreImp comercio = (StoreImp) s;[m
+[32m+[m
+[32m+[m[32m    return comercio->x;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mdouble getComercioY(Comercio s){[m
+[32m+[m[32m   StoreImp comercio = (StoreImp) s;[m
+[32m+[m
+[32m+[m[32m    return comercio->y;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mTipoComercio getComercioType(Comercio s){[m
+[32m+[m[32m   StoreImp comercio = (StoreImp) s;[m
+[32m+[m
+[32m+[m[32m    return comercio->storeType;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mQuadra getComercioBloco(Comercio s){[m
+[32m+[m[32m   StoreImp comercio = (StoreImp) s;[m
+[32m+[m
+[32m+[m[32m    return comercio->block;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mvoid destroiComercio(Comercio s){[m
+[32m+[m[41m    [m
+[32m+[m[32m    free(s);[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/src/comercio.h b/src/comercio.h[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3a60002[m
+[1m--- /dev/null[m
+[1m+++ b/src/comercio.h[m
+[36m@@ -0,0 +1,112 @@[m
+[32m+[m[32m#ifndef COMERCIO__H[m
+[32m+[m[32m#define COMERCIO__H[m
+[32m+[m
+[32m+[m[32m#include <stdio.h>[m
+[32m+[m[32m#include <stdlib.h>[m
+[32m+[m[32m#include <string.h>[m
+[32m+[m[32m#include <stdbool.h>[m
+[32m+[m[32m#include "hashTable.h"[m
+[32m+[m[32m#include "./elementos/quadra.h"[m
+[32m+[m[32m#include "tipoComercio.h"[m
+[32m+[m[32m#include "pessoa.h"[m
+[32m+[m
+[32m+[m[32m//TAD COMERCIO[m
+[32m+[m[32mtypedef void *Comercio;[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m * Cria a estrutura comercio[m
+[32m+[m[32m * Necessita do comando de comercio ser invocado[m
+[32m+[m[32m * Retorna um comercio[m
+[32m+[m[32m */[m
+[32m+[m[32mComercio criarComercio (char cnpj[], char cpf[], char codt[], char cep[], char face[], int num, char nome[], HashTable tipoLoja, HashTable pessoas, Quadra quadra);[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m * Retorna o cnpj de um comercio[m
+[32m+[m[32m * Necessita de um comercio existente[m
+[32m+[m[32m * Retorna o cnpj de um comercio[m
+[32m+[m[32m */[m
+[32m+[m[32mchar* getComercioCnpj (Comercio s);[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m * Retorna o dono de um comercio[m
+[32m+[m[32m * Necessita de um comercio existente[m
+[32m+[m[32m * Retorna o dono de um comercio[m
+[32m+[m[32m */[m
+[32m+[m[32mchar* getComercioOwner (Comercio s);[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m * Retorna o cep de um comercio[m
+[32m+[m[32m * Necessita de um comercio existente[m
+[32m+[m[32m * Retorna o cep de um comercio[m
+[32m+[m[32m */[m
+[32m+[m[32mchar* getComercioCep (Comercio s);[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m * Retorna a face de um comercio[m
+[32m+[m[32m * Necessita de um comercio existente[m
+[32m+[m[32m * Retorna a face de um comercio[m
+[32m+[m[32m */[m
+[32m+[m[32mchar* getComercioFace (Comercio s);[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m * Retorna o nome de um comercio[m
+[32m+[m[32m * Necessita de um comercio existente[m
+[32m+[m[32m * Retorna o nome de um comercio[m
+[32m+[m[32m */[m
+[32m+[m[32mchar* getComercioName (Comercio s);[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m * Retorna o numero de um comercio[m
+[32m+[m[32m * Necessita de um comercio existente[m
+[32m+[m[32m * Retorna o numero de um comercio[m
+[32m+[m[32m */[m
+[32m+[m[32mint getComercioNum (Comercio s);[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m * Retorna o codt de um comercio[m
+[32m+[m[32m * Necessita de um comercio existente[m
+[32m+[m[32m * Retorna o codt de um comercio[m
+[32m+[m[32m */[m
+[32m+[m[32mchar* getComercioCodt (Comercio s);[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m * Retorna o x de um comercio[m
+[32m+[m[32m * Necessita de um comercio existente[m
+[32m+[m[32m * Retorna o x de um comercio[m
+[32m+[m[32m */[m
+[32m+[m[32mdouble getComercioX(Comercio s);[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m * Retorna o y de um comercio[m
+[32m+[m[32m * Necessita de um comercio existente[m
+[32m+[m[32m * Retorna o y de um comercio[m
+[32m+[m[32m */[m
+[32m+[m[32mdouble getComercioY(Comercio s);[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m * Retorna o tipo de um comercio[m
+[32m+[m[32m * Necessita de um comercio existente[m
+[32m+[m[32m * Retorna o tipo de um comercio[m
+[32m+[m[32m */[m
+[32m+[m[32mTipoComercio getComercioType(Comercio s);[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m * Da free num comercio[m
+[32m+[m[32m * Necessita de um comercio existente[m
+[32m+[m[32m * Retorna nada[m
+[32m+[m[32m */[m
+[32m+[m[32mvoid destroiComercio(Comercio s);[m
+[32m+[m
+[32m+[m[32m#endif[m
+\ No newline at end of file[m
+[1mdiff --git a/src/comercio_qry.c b/src/comercio_qry.c[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d2e19ab[m
+[1m--- /dev/null[m
+[1m+++ b/src/comercio_qry.c[m
+[36m@@ -0,0 +1,29 @@[m
+[32m+[m[32m#include"comercio_qry.h"[m
+[32m+[m
+[32m+[m[32mvoid consulta_de(char cnpj[], HashTable comercios, FILE* arq){[m
+[32m+[m[32m    Comercio comercio;[m
+[32m+[m[32m    TipoComercio tipocomercio;[m
+[32m+[m[32m    Pessoa dono;[m
+[32m+[m
+[32m+[m[32m    bool found = false;[m
+[32m+[m[32m    for(int i = 0; i < getHashTableSize(comercios); i++){[m
+[32m+[m[32m        ListNode node = getHashNode(comercios, i);[m
+[32m+[m[32m        while(node != NULL){[m
+[32m+[m[32m            comercio = getHashNodeElement(node);[m
+[32m+[m
+[32m+[m[32m            if(!strcmp(cnpj, getComercioCnpj(comercio))){[m
+[32m+[m[32m                found = true;[m
+[32m+[m[32m                break;[m
+[32m+[m[32m            }[m
+[32m+[m[32m            node = getHashNodeNext(node);[m[41m  [m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        if(found) break;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    tipocomercio = getComercioType(comercio);[m
+[32m+[m[32m    dono = getComercioOwner(comercio);[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    fprintf(arq, "-%s:\n\tCODT: %s\n\tDescrição: %s\n\tCNPJ: %s\n\tCEP: %s, Face: %s, Numero: %d\n\tNome do proprietário: %s %s, CPF: %s\n", getComercioName(comercio), getTipoComercioCodt(tipocomercio), getTipoComercioDesc(tipocomercio), getComercioCnpj(comercio), getComercioCep(comercio), getComercioFace(comercio), getComercioNum(comercio), getPessoaName(dono), getPessoaLastName(dono), getPessoaCpf (dono));[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/comercio_qry.h b/src/comercio_qry.h[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c80c642[m
+[1m--- /dev/null[m
+[1m+++ b/src/comercio_qry.h[m
+[36m@@ -0,0 +1,20 @@[m
+[32m+[m[32m#ifndef COMERCIO_QRY__H[m
+[32m+[m[32m#define COMERCIO_QRY__H[m
+[32m+[m
+[32m+[m[32m#include <stdio.h>[m
+[32m+[m[32m#include <stdlib.h>[m
+[32m+[m[32m#include <string.h>[m
+[32m+[m[32m#include <stdbool.h>[m
+[32m+[m[32m#include "comercio.h"[m
+[32m+[m[32m#include "pessoa.h"[m
+[32m+[m[32m#include "tipoComercio.h"[m
+[32m+[m[32m#include "hashTable.h"[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m * Comando informa as informações de um comercio de cnpj dado[m
+[32m+[m[32m * Necessita do comando de ter sido invocado[m
+[32m+[m[32m * Retorna nada[m
+[32m+[m[32m */[m
+[32m+[m[32mvoid consulta_de(char cnpj[], HashTable comercios, FILE* arq);[m
+[32m+[m
+[32m+[m[32m#endif[m
+\ No newline at end of file[m
+[1mdiff --git a/src/consultas.c b/src/consultas.c[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c0ccaf4[m
+[1m--- /dev/null[m
+[1m+++ b/src/consultas.c[m
+[36m@@ -0,0 +1,736 @@[m
+[32m+[m[32m#include"consultas.h"[m
+[32m+[m[32m#include"leitura_geo.h"[m
+[32m+[m[32m#include"util.h"[m
+[32m+[m[32m#include"svg.h"[m
+[32m+[m[32m#include"lista.h"[m
+[32m+[m[32m#include"./elementos/forma.h"[m
+[32m+[m[32m#include"./elementos/quadra.h"[m
+[32m+[m[32m#include"./elementos/semaforo.h"[m
+[32m+[m[32m#include"./elementos/hidrante.h"[m
+[32m+[m[32m#include"./elementos/radioBase.h"[m
+[32m+[m[32m#include"./elementos/casos.h"[m
+[32m+[m[32m#include"./elementos/casosDentro.h"[m
+[32m+[m[32m#include"quadTree.h"[m
+[32m+[m
+[32m+[m
+[32m+[m[32mvoid consulta_o(Tree arvoreForma, char j[], char k[], FILE*txt, FILE *aux_txt){[m
+[32m+[m[32mForma forma1;[m
+[32m+[m[32mForma forma2;[m
+[32m+[m
+[32m+[m[32mPosicNo auxForma;[m
+[32m+[m[32mPosicNo auxForma2;[m
+[32m+[m
+[32m+[m[32mauxForma =  percorrer_Forma_QD(arvoreForma, j, getFirstElementTree(arvoreForma));[m
+[32m+[m[32mauxForma2 = percorrer_Forma_QD(arvoreForma, k, getFirstElementTree(arvoreForma));[m
+[32m+[m
+[32m+[m[32mforma1 = getElement(arvoreForma, auxForma);[m
+[32m+[m[32mforma2 = getElement(arvoreForma, auxForma2);[m
+[32m+[m
+[32m+[m[32m    if(forma1 == NULL){[m
+[32m+[m[32m        return;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    if(forma2 == NULL){[m
+[32m+[m[32m        return;[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m    if((strcmp(getTipoForma(forma1), "c") == 0) && (strcmp(getTipoForma(forma2),"c") == 0)){[m
+[32m+[m[32m        if(circulo_circulo(forma1, forma2)){[m
+[32m+[m[32m            fprintf(txt,"o? %s %s\n",j,k);[m
+[32m+[m[32m            fprintf(txt,"%s: circulo %s: circulo SIM\n\n",j,k);[m
+[32m+[m[32m            imprimir_retangulo_delimitador(forma1,forma2,true,aux_txt);[m
+[32m+[m
+[32m+[m[32m        }[m
+[32m+[m[32m        else{[m
+[32m+[m[32m            fprintf(txt,"o? %s %s\n",j,k);[m
+[32m+[m[32m            fprintf(txt,"%s: circulo %s: circulo NAO\n\n",j,k);[m
+[32m+[m[32m            imprimir_retangulo_delimitador(forma1,forma2,false,aux_txt);[m
+[32m+[m[32m        }[m[41m          [m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    else if((strcmp(getTipoForma(forma1), "r") == 0) && (strcmp(getTipoForma(forma2),"r") == 0)){[m
+[32m+[m[32m        if(retangulo_retangulo(forma1, forma2)){[m
+[32m+[m[32m            fprintf(txt,"o? %s %s\n",j,k);[m
+[32m+[m[32m            fprintf(txt,"%s: retangulo %s: retangulo SIM\n\n",j,k);[m
+[32m+[m[32m            imprimir_retangulo_delimitador(forma1,forma2,true,aux_txt);[m
+[32m+[m[32m        }[m
+[32m+[m[32m        else{[m
+[32m+[m[32m            fprintf(txt,"o? %s %s\n",j,k);[m
+[32m+[m[32m            fprintf(txt,"%s: retangulo %s: retangulo NAO\n\n",j,k);[m
+[32m+[m[32m            imprimir_retangulo_delimitador(forma1,forma2,false,aux_txt);[m
+[32m+[m[32m        }[m[41m          [m
+[32m+[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    else if((strcmp(getTipoForma(forma1), "c") == 0) && (strcmp(getTipoForma(forma2),"r") == 0) || (strcmp(getTipoForma(forma1), "r") == 0) && (strcmp(getTipoForma(forma2),"c") == 0)){[m
+[32m+[m[32m        if(circulo_ou_retangulo(forma1,forma2)){[m
+[32m+[m[32m            if(strcmp(getTipoForma(forma1),"c") == 0){[m
+[32m+[m[32m                fprintf(txt,"o? %s %s\n",j,k);[m
+[32m+[m[32m                fprintf(txt,"%s: circulo %s: retangulo SIM\n\n",j,k);[m
+[32m+[m[32m                imprimir_retangulo_delimitador(forma1,forma2,true,aux_txt);[m
+[32m+[m[32m            }[m
+[32m+[m[32m            else{[m
+[32m+[m[32m                fprintf(txt,"o? %s %s\n",j,k);[m
+[32m+[m[32m                fprintf(txt,"%s: retangulo %s: circulo SIM\n\n",j,k);[m
+[32m+[m[32m                imprimir_retangulo_delimitador(forma1,forma2,true,aux_txt);[m
+[32m+[m[32m            }[m
+[32m+[m[41m            [m
+[32m+[m[32m        }[m
+[32m+[m[32m        else{[m
+[32m+[m[32m            if(strcmp(getTipoForma(forma1),"c") == 0){[m
+[32m+[m[32m                fprintf(txt,"o? %s %s\n",j,k);[m
+[32m+[m[32m                fprintf(txt,"%s: circulo %s: retangulo NAO\n\n",j,k);[m
+[32m+[m[32m                imprimir_retangulo_delimitador(forma1,forma2,false,aux_txt);[m
+[32m+[m[32m            }[m
+[32m+[m[32m            else{[m
+[32m+[m[32m                fprintf(txt,"o? %s %s\n",j,k);[m
+[32m+[m[32m                fprintf(txt,"%s: retangulo %s: circulo NAO\n\n",j,k);[m
+[32m+[m[32m                imprimir_retangulo_delimitador(forma1,forma2,false,aux_txt);[m
+[32m+[m[41m        [m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m[41m   [m
+[32m+[m[41m    [m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mvoid consulta_i(Tree arvoreForma, char j[], double x, double y, FILE *txt, FILE *aux_txt){[m
+[32m+[m[32mdouble distancia;[m
+[32m+[m[32mPosicNo auxForma;[m
+[32m+[m[32mForma forma;[m
+[32m+[m
+[32m+[m[32m    fprintf(txt,"i? %s %lf %lf\n",j,x,y);[m
+[32m+[m[32m    auxForma = percorrer_Forma_QD(arvoreForma, j, getFirstElementTree(arvoreForma));[m
+[32m+[m[32m    forma = getElement(arvoreForma, auxForma);[m
+[32m+[m[41m    [m
+[32m+[m[32m    if(forma == NULL){[m
+[32m+[m[32m        return;[m
+[32m+[m[32m    }[m
+[32m+[m[41m [m
+[32m+[m[32m    if(strcmp(getTipoForma(forma), "c" ) == 0){[m
+[32m+[m[32m        distancia =  distanciaEuclidiana(x, y, getXForma(forma), getYForma(forma));[m
+[32m+[m[41m        [m
+[32m+[m[32m        if(distancia <= getRaioForma(forma)){[m
+[32m+[m[32m            fprintf(txt,"%s: circulo INTERNO\n\n",j);[m
+[32m+[m[32m            svg_imprimir_ponto(aux_txt, "blue", x, y);[m
+[32m+[m[32m            svg_imprimir_linha(aux_txt, x, y, getXForma(forma), getYForma(forma),"blue");[m
+[32m+[m[32m        }[m
+[32m+[m[32m        else{[m
+[32m+[m[32m            fprintf(txt,"%s: circulo NAO INTERNO\n\n",j);[m
+[32m+[m[32m            svg_imprimir_ponto(aux_txt, "magenta", x, y);[m
+[32m+[m[32m            svg_imprimir_linha(aux_txt, x, y, getXForma(forma), getYForma(forma),"magenta");[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    else if(strcmp(getTipoForma(forma), "r" ) == 0){[m
+[32m+[m[32m        if(x > getXForma(forma) && x < getXForma(forma)  + getWForma(forma) && y > getYForma(forma) && y < getYForma(forma) + getHForma(forma)){[m[41m    [m
+[32m+[m[32m            fprintf(txt,"%s: retangulo INTERNO\n\n",j);[m
+[32m+[m[32m            svg_imprimir_ponto(aux_txt, "blue", x, y);[m
+[32m+[m[32m            svg_imprimir_linha(aux_txt, x, y, getXForma(forma) + (getWForma(forma) / 2), getYForma(forma) + (getHForma(forma) / 2),"blue");[m
+[32m+[m[32m        }[m
+[32m+[m[32m        else{[m
+[32m+[m[32m            fprintf(txt,"%s: retangulo NAO INTERNO\n\n",j);[m
+[32m+[m[32m            svg_imprimir_ponto(aux_txt, "magenta", x, y);[m
+[32m+[m[32m            svg_imprimir_linha(aux_txt, x, y, getXForma(forma) + (getWForma(forma) / 2),getYForma(forma) + (getHForma(forma) / 2),"magenta");[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m[41m     [m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mvoid consulta_pnt(Tree arvoreForma, Tree arvoreTexto, char j[], char corBorda[], char corPreenchimento[], FILE *txt){[m
+[32m+[m[32mPosicNo auxForma;[m
+[32m+[m[32mPosicNo auxTexto;[m
+[32m+[m[32mForma forma;[m
+[32m+[m[32mTexto texto;[m
+[32m+[m[41m    [m
+[32m+[m[32m    auxForma = percorrer_Forma_QD(arvoreForma, j, getFirstElementTree(arvoreForma));[m
+[32m+[m[32m    forma = getElement(arvoreForma, auxForma);[m
+[32m+[m
+[32m+[m[32m    auxTexto = percorrer_Texto_QD(arvoreTexto, j, getFirstElementTree(arvoreTexto));[m
+[32m+[m[32m    texto = getElement(arvoreForma, auxTexto);[m
+[32m+[m[41m   [m
+[32m+[m
+[32m+[m[32m    fprintf(txt, "pnt j:%s corb:%s corp:%s\n", j, corBorda, corPreenchimento);[m
+[32m+[m
+[32m+[m[32m    if(forma != NULL){[m
+[32m+[m[32m        if(strcmp(getTipoForma(forma), "c") == 0 ){[m
+[32m+[m[32m            fprintf(txt,"id:%s\n",getIdForma(forma));[m
+[32m+[m[32m            fprintf(txt,"tipo:circulo\n");[m
+[32m+[m[32m            fprintf(txt,"raio:%lf\n",getRaioForma(forma));[m
+[32m+[m[32m            fprintf(txt,"(X,Y) = (%lf,%lf)\n",getXForma(forma),getYForma(forma));[m
+[32m+[m[32m            fprintf(txt,"cor borda:%s\n",getcorBordaForma(forma));[m
+[32m+[m[32m            fprintf(txt,"cor preenchimento:%s\n\n",getcorPreenchimentoForma(forma));[m
+[32m+[m[32m        }[m
+[32m+[m[32m        else if(strcmp(getTipoForma(forma), "r") == 0 ){[m
+[32m+[m[32m            fprintf(txt,"id:%s\n",getIdForma(forma));[m
+[32m+[m[32m            fprintf(txt,"tipo:retangulo\n");[m
+[32m+[m[32m            fprintf(txt,"altura:%lf\n",getHForma(forma));[m
+[32m+[m[32m            fprintf(txt,"comprimento:%lf\n",getWForma(forma));[m
+[32m+[m[32m            fprintf(txt,"(X,Y) = (%lf,%lf)\n",getXForma(forma),getYForma(forma));[m
+[32m+[m[32m            fprintf(txt,"cor borda:%s\n",getcorBordaForma(forma));[m
+[32m+[m[32m            fprintf(txt,"cor preenchimento:%s\n\n",getcorPreenchimentoForma(forma));[m
+[32m+[m[32m        }[m[41m  [m
+[32m+[m[32m        setcorBordaForma(forma, corBorda);[m
+[32m+[m[32m        setcorPreenchimentoForma(forma, corPreenchimento);[m
+[32m+[m[32m    }[m
+[32m+[m[32m    if(texto != NULL){[m
+[32m+[m[32m        if(strcmp(getTipoTexto(texto), "t") == 0){[m
+[32m+[m[32m            fprintf(txt,"id:%s\n",getIdTexto(texto));[m
+[32m+[m[32m            fprintf(txt,"tipo:texto\n");[m
+[32m+[m[32m            fprintf(txt,"(X,Y) = (%lf,%lf)\n",getXTexto(texto),getYTexto(texto));[m
+[32m+[m[32m            fprintf(txt,"cor borda:%s\n",getcorBordaTexto(texto));[m
+[32m+[m[32m            fprintf(txt,"cor preenchimento:%s\n",getcorPreenchimentoTexto(texto));[m
+[32m+[m[32m            fprintf(txt,"conteudo:%s\n", getConteudoTexto(texto));[m
+[32m+[m[32m            setcorBordaTexto(texto, corBorda);[m
+[32m+[m[32m            setcorPreenchimentoTexto(texto, corPreenchimento);[m
+[32m+[m[32m        }[m[41m [m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mvoid consulta_pnt_2(Tree arvoreForma, Tree arvoreTexto,  int j_num, int k_num, char corBorda[32], char corPreenchimento[32], FILE *txt){[m
+[32m+[m[32mint aux;[m
+[32m+[m[32mchar j[32], k[32];[m
+[32m+[m[32mPosicNo auxForma;[m
+[32m+[m[32mPosicNo auxTexto;[m
+[32m+[m[32mForma forma;[m
+[32m+[m[32mTexto texto;[m
+[32m+[m[41m [m
+[32m+[m[32m //if reponsalvel por verificar qual variavel é a menor em comparação com a outra[m
+[32m+[m[32m   if(j_num > k_num){[m
+[32m+[m[32m        aux = j_num;[m
+[32m+[m[32m        j_num = k_num;[m
+[32m+[m[32m        k_num = aux;[m
+[32m+[m[32m    }[m
+[32m+[m[41m  [m
+[32m+[m
+[32m+[m[32m    fprintf(txt,"pnt* j:%d k:%d corb:%s corp:%s\n",j_num,k_num,corBorda,corPreenchimento);[m
+[32m+[m[32m    int aux_j_num = j_num;[m[41m [m
+[32m+[m
+[32m+[m[32m    for(j_num; j_num <= k_num; j_num++){[m
+[32m+[m[32m        sprintf(j, "%d", j_num);[m
+[32m+[m
+[32m+[m[32m        auxForma = percorrer_Forma_QD(arvoreForma, j, getFirstElementTree(arvoreForma));[m
+[32m+[m[32m        forma = getElement(arvoreForma, auxForma);[m
+[32m+[m
+[32m+[m[32m        auxTexto = percorrer_Texto_QD(arvoreTexto, j, getFirstElementTree(arvoreTexto));[m
+[32m+[m[32m        texto = getElement(arvoreForma, auxTexto);[m
+[32m+[m
+[32m+[m[32m        if(forma != NULL){[m[41m  [m
+[32m+[m[32m            if(strcmp(getTipoForma(forma), "c") == 0 ){[m
+[32m+[m[32m                fprintf(txt,"id:%s\n",getIdForma(forma));[m
+[32m+[m[32m                fprintf(txt,"tipo:circulo\n");[m
+[32m+[m[32m                fprintf(txt,"raio:%lf\n",getRaioForma(forma));[m
+[32m+[m[32m                fprintf(txt,"(X,Y) = (%lf,%lf)\n",getXForma(forma),getYForma(forma));[m
+[32m+[m[32m                fprintf(txt,"cor borda:%s\n",getcorBordaForma(forma));[m
+[32m+[m[32m                fprintf(txt,"cor preenchimento:%s\n\n",getcorPreenchimentoForma(forma));[m
+[32m+[m[32m            }[m
+[32m+[m[32m            else if(strcmp(getTipoForma(forma), "r") == 0 ){[m
+[32m+[m[32m                fprintf(txt,"id:%s\n",getIdForma(forma));[m
+[32m+[m[32m                fprintf(txt,"tipo:retangulo\n");[m
+[32m+[m[32m                fprintf(txt,"altura:%lf\n",getHForma(forma));[m
+[32m+[m[32m                fprintf(txt,"comprimento:%lf\n",getWForma(forma));[m
+[32m+[m[32m                fprintf(txt,"(X,Y) = (%lf,%lf)\n",getXForma(forma),getYForma(forma));[m
+[32m+[m[32m                fprintf(txt,"cor borda:%s\n",getcorBordaForma(forma));[m
+[32m+[m[32m                fprintf(txt,"cor preenchimento:%s\n\n",getcorPreenchimentoForma(forma));[m
+[32m+[m[32m            }[m[41m  [m
+[32m+[m[32m            setcorBordaForma(forma, corBorda);[m
+[32m+[m[32m            setcorPreenchimentoForma(forma, corPreenchimento);[m
+[32m+[m[32m        }[m
+[32m+[m[32m        if(texto != NULL){[m
+[32m+[m[32m            if(strcmp(getTipoTexto(texto), "t") == 0 ){[m
+[32m+[m[32m                fprintf(txt,"id:%s\n",getIdTexto(texto));[m
+[32m+[m[32m                fprintf(txt,"tipo:texto\n");[m
+[32m+[m[32m                fprintf(txt,"(X,Y) = (%lf,%lf)\n",getXTexto(texto),getYTexto(texto));[m
+[32m+[m[32m                fprintf(txt,"cor borda:%s\n",getcorBordaTexto(texto));[m
+[32m+[m[32m                fprintf(txt,"cor preenchimento:%s\n",getcorPreenchimentoTexto(texto));[m
+[32m+[m[32m                fprintf(txt,"conteudo:%s\n", getConteudoTexto(texto));[m
+[32m+[m[32m                setcorBordaTexto(texto, corBorda);[m
+[32m+[m[32m                setcorPreenchimentoTexto(texto, corPreenchimento);[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m[41m  [m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mvoid consulta_delf(Tree arvoreForma, Tree arvoreTexto, char j[], FILE *txt){[m
+[32m+[m[32mPosicNo auxForma;[m
+[32m+[m[32mPosicNo auxTexto;[m
+[32m+[m[32mForma forma;[m
+[32m+[m[32mTexto texto;[m
+[32m+[m
+[32m+[m[32m    auxForma = percorrer_Forma_QD(arvoreForma, j, getFirstElementTree(arvoreForma));[m
+[32m+[m[32m    forma = getElement(arvoreForma, auxForma);[m
+[32m+[m
+[32m+[m[32m    auxTexto = percorrer_Texto_QD(arvoreTexto, j, getFirstElementTree(arvoreTexto));[m
+[32m+[m[32m    texto = getElement(arvoreForma, auxTexto);[m
+[32m+[m[41m    [m
+[32m+[m[32m    fprintf(txt,"delf j:%s\n",j);[m
+[32m+[m
+[32m+[m[32m    if(forma != NULL){[m[41m  [m
+[32m+[m[32m        if(strcmp(getTipoForma(forma), "c") == 0 ){[m
+[32m+[m[32m            fprintf(txt,"id:%s\n",getIdForma(forma));[m
+[32m+[m[32m            fprintf(txt,"tipo:circulo\n");[m
+[32m+[m[32m            fprintf(txt,"raio:%lf\n",getRaioForma(forma));[m
+[32m+[m[32m            fprintf(txt,"(X,Y) = (%lf,%lf)\n",getXForma(forma),getYForma(forma));[m
+[32m+[m[32m            fprintf(txt,"cor borda:%s\n",getcorBordaForma(forma));[m
+[32m+[m[32m            fprintf(txt,"cor preenchimento:%s\n\n",getcorPreenchimentoForma(forma));[m
+[32m+[m[32m        }[m
+[32m+[m[32m        else if(strcmp(getTipoForma(forma), "r") == 0 ){[m
+[32m+[m[32m            fprintf(txt,"id:%s\n",getIdForma(forma));[m
+[32m+[m[32m            fprintf(txt,"tipo:retangulo\n");[m
+[32m+[m[32m            fprintf(txt,"altura:%lf\n",getHForma(forma));[m
+[32m+[m[32m            fprintf(txt,"comprimento:%lf\n",getWForma(forma));[m
+[32m+[m[32m            fprintf(txt,"(X,Y) = (%lf,%lf)\n",getXForma(forma),getYForma(forma));[m
+[32m+[m[32m            fprintf(txt,"cor borda:%s\n",getcorBordaForma(forma));[m
+[32m+[m[32m            fprintf(txt,"cor preenchimento:%s\n\n",getcorPreenchimentoForma(forma));[m
+[32m+[m[32m        }[m[41m  [m
+[32m+[m[32m        removeTree(arvoreForma, auxForma);[m
+[32m+[m[32m    }[m
+[32m+[m[32m    if(texto != NULL){[m[41m  [m
+[32m+[m[32m        if(strcmp(getTipoTexto(texto), "t") == 0){[m
+[32m+[m[32m        fprintf(txt,"id:%s\n",getIdTexto(texto));[m
+[32m+[m[32m        fprintf(txt,"tipo:texto\n");[m
+[32m+[m[32m        fprintf(txt,"(X,Y) = (%lf,%lf)\n",getXTexto(texto),getYTexto(texto));[m
+[32m+[m[32m        fprintf(txt,"cor borda:%s\n",getcorBordaTexto(texto));[m
+[32m+[m[32m        fprintf(txt,"cor preenchimento:%s\n",getcorPreenchimentoTexto(texto));[m
+[32m+[m[32m        fprintf(txt,"conteudo:%s\n", getConteudoTexto(texto));[m
+[32m+[m[32m        removeTree(arvoreTexto, auxTexto);[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m[41m [m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mvoid consulta_delf_2 (Tree arvoreForma, Tree arvoreTexto, int j_num, int k_num,  FILE *txt){[m
+[32m+[m[32mint id_j, id_k, aux;[m
+[32m+[m[32mchar j[32];[m
+[32m+[m[32mPosicNo auxForma;[m
+[32m+[m[32mPosicNo auxTexto;[m
+[32m+[m[32mForma forma;[m
+[32m+[m[32mTexto texto;[m
+[32m+[m
+[32m+[m[32m   if(j_num > k_num){[m
+[32m+[m[32m        aux = j_num;[m
+[32m+[m[32m        j_num = k_num;[m
+[32m+[m[32m        k_num = aux;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    fprintf(txt,"delf* j:%d k:%d\n",j_num, k_num);[m
+[32m+[m[32m    int id_j_aux = id_j;[m
+[32m+[m
+[32m+[m[32m    for(j_num; j_num <= k_num; j_num++){[m
+[32m+[m[32m        sprintf(j, "%d", j_num);[m
+[32m+[m
+[32m+[m[32m        auxForma = percorrer_Forma_QD(arvoreForma, j, getFirstElementTree(arvoreForma));[m
+[32m+[m[32m        forma = getElement(arvoreForma, auxForma);[m
+[32m+[m
+[32m+[m[32m        auxTexto = percorrer_Texto_QD(arvoreTexto, j, getFirstElementTree(arvoreTexto));[m
+[32m+[m[32m        texto = getElement(arvoreForma, auxTexto);[m
+[32m+[m
+[32m+[m[32m        if(forma != NULL){[m
+[32m+[m[32m            if(strcmp(getTipoForma(forma), "c") == 0 ){[m
+[32m+[m[32m                fprintf(txt,"id:%s\n",getIdForma(forma));[m
+[32m+[m[32m                fprintf(txt,"tipo:circulo\n");[m
+[32m+[m[32m                fprintf(txt,"raio:%lf\n",getRaioForma(forma));[m
+[32m+[m
+[32m+[m[32m                fprintf(txt,"(X,Y) = (%lf,%lf)\n",getXForma(forma),getYForma(forma));[m
+[32m+[m[32m                fprintf(txt,"cor borda:%s\n",getcorBordaForma(forma));[m
+[32m+[m[32m                fprintf(txt,"cor preenchimento:%s\n\n",getcorPreenchimentoForma(forma));[m
+[32m+[m[32m            }[m
+[32m+[m[32m            else if(strcmp(getTipoForma(forma), "r") == 0 ){[m
+[32m+[m[32m                fprintf(txt,"id:%s\n",getIdForma(forma));[m
+[32m+[m[32m                fprintf(txt,"tipo:retangulo\n");[m
+[32m+[m[32m                fprintf(txt,"altura:%lf\n",getHForma(forma));[m
+[32m+[m[32m                fprintf(txt,"comprimento:%lf\n",getWForma(forma));[m
+[32m+[m[32m                fprintf(txt,"(X,Y) = (%lf,%lf)\n",getXForma(forma),getYForma(forma));[m
+[32m+[m[32m                fprintf(txt,"cor borda:%s\n",getcorBordaForma(forma));[m
+[32m+[m[32m                fprintf(txt,"cor preenchimento:%s\n\n",getcorPreenchimentoForma(forma));[m
+[32m+[m[32m            }[m[41m  [m
+[32m+[m[32m            removeTree(arvoreForma, auxForma);[m
+[32m+[m[32m        }[m
+[32m+[m[32m        if(texto != NULL){[m
+[32m+[m[32m            if(strcmp(getTipoTexto(texto), "t") == 0 ){[m
+[32m+[m[32m                fprintf(txt,"id:%s\n",getIdTexto(texto));[m
+[32m+[m[32m                fprintf(txt,"tipo:texto\n");[m
+[32m+[m[32m                fprintf(txt,"(X,Y) = (%lf,%lf)\n",getXTexto(texto),getYTexto(texto));[m
+[32m+[m[32m                fprintf(txt,"cor borda:%s\n",getcorBordaTexto(texto));[m
+[32m+[m[32m                fprintf(txt,"cor preenchimento:%s\n",getcorPreenchimentoTexto(texto));[m
+[32m+[m[32m                fprintf(txt,"conteudo:%s\n", getConteudoTexto(texto));[m
+[32m+[m[32m            }[m
+[32m+[m[32m            removeTree(arvoreTexto, auxTexto);[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mvoid consulta_dq(char aux[], char j[], double r, bool verificador, FILE *svg2, FILE* txt, FILE *txt_aux,[m
+[32m+[m[32m                Tree arvoreQuadra, Tree arvoreHidrante, Tree arvoreSemaforo, Tree arvoreRadioBase){[m
+[32m+[m[32m    char id[32];[m
+[32m+[m[32m    char resposta[4];[m
+[32m+[m[32m    double raio, x, y;[m
+[32m+[m
+[32m+[m[32m    Elemento elementoAux;[m
+[32m+[m
+[32m+[m[32m    if(verificador){[m
+[32m+[m[32m        strcpy(id, j);[m
+[32m+[m[32m        raio = r;[m
+[32m+[m[32m    }else{[m
+[32m+[m[32m        strcpy(id, aux);[m
+[32m+[m[32m        raio = r;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    elementoAux = encontrarElementoArvores(id, arvoreQuadra, arvoreHidrante, arvoreSemaforo, arvoreRadioBase);[m
+[32m+[m
+[32m+[m[32m    if(strcmp(getTipoHidrante(elementoAux),"h") == 0){[m
+[32m+[m[32m       strcpy(resposta,"h");[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    if(strcmp(getTipoSema(elementoAux),"s") == 0){[m
+[32m+[m[32m        strcpy(resposta,"s");[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    if(strcmp(getTipoRB(elementoAux),"rb") == 0){[m
+[32m+[m[32m        strcpy(resposta,"rb");[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    if(strcmp(aux,"#") == 0){[m
+[32m+[m[32m        fprintf(txt, "dq: # cep:%s raio:%lf\n",id, raio);[m
+[32m+[m[32m    }[m
+[32m+[m[32m    else{[m
+[32m+[m[32m        fprintf(txt, "dq: cep:%s raio:%lf\n",id, raio);[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    Lista listaQuadra_2 = create();[m
+[32m+[m
+[32m+[m[32m    if(strcmp(resposta, "h") == 0){[m
+[32m+[m[32m        x = getXHid(elementoAux);[m
+[32m+[m[32m        y = getYHid(elementoAux);[m
+[32m+[m[32m        fprintf(txt, "Elemento urbano: %s\n", getIDHid(elementoAux));[m
+[32m+[m[32m    }else if(strcmp(resposta, "s") == 0){[m
+[32m+[m[32m        x = getXSema(elementoAux);[m
+[32m+[m[32m        y = getXSema(elementoAux);[m
+[32m+[m[32m        fprintf(txt, "Elemento urbano: %s\n", getIDSema(elementoAux));[m
+[32m+[m[32m    }else if(strcmp(resposta, "rb") == 0){[m
+[32m+[m[32m        x = getXRB(elementoAux);[m
+[32m+[m[32m        y = getYRB(elementoAux);[m
+[32m+[m[32m        fprintf(txt, "Elemento urbano: %s\n", getIDRB(elementoAux));[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    dq_percorrer_arvore(arvoreQuadra, x, y , raio, txt, svg2, verificador, getFirstElementTree(arvoreQuadra), listaQuadra_2);[m
+[32m+[m[32m    dq_quadra_remover(listaQuadra_2, arvoreQuadra);[m
+[32m+[m
+[32m+[m[32m    anelGrosso(svg2, elementoAux,resposta);[m
+[32m+[m[32m    anelDq(txt_aux, elementoAux, resposta, r);[m
+[32m+[m[32m    fprintf(txt,"\n\n");[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mvoid consulta_del(FILE* aux, Tree arvoreQuadra, Tree arvoreHidrante, Tree arvoreSemaforo, Tree arvoreRadioBase, char id[], FILE *svg2, FILE *txt){[m
+[32m+[m[32m    Elemento elementoAux;[m
+[32m+[m[32m    double x, y;[m
+[32m+[m[32m    PosicNo excluir;[m
+[32m+[m
+[32m+[m[32m    elementoAux = encontrarElementoArvores(id, arvoreQuadra, arvoreHidrante, arvoreSemaforo, arvoreRadioBase);[m
+[32m+[m
+[32m+[m[32m    fprintf(txt,"del: cep|id:%s\n",id);[m
+[32m+[m[32m    if(elementoAux != NULL){[m
+[32m+[m[32m        if(strcmp(getTipoHidrante(elementoAux),"h") == 0){[m
+[32m+[m[32m            excluir = percorrer_Hidrante_QD(arvoreHidrante, id, getFirstElementTree(arvoreHidrante));[m
+[32m+[m[32m            fprintf (txt, "Hidrante x = %lf y = %lf\n", getXHid (elementoAux), getYHid(elementoAux));[m
+[32m+[m[32m            removeTree(arvoreHidrante, excluir);[m
+[32m+[m[32m            svg_imprimir_linha(aux, getXHid(elementoAux), getYHid(elementoAux), getXHid(elementoAux), 0, "black");[m
+[32m+[m[32m            fprintf(svg2, "\n\t<text\n\t\tx=\"%lf\"", getXHid(elementoAux) + 10);[m
+[32m+[m[32m            fprintf(svg2, "\n\t\ty=\"0\"");[m
+[32m+[m[32m            fprintf(svg2, "\n\t\tstroke=\"black\"");[m
+[32m+[m[32m            fprintf(svg2, "\n\t\tfill=\"black\">");[m
+[32m+[m[32m            fprintf(svg2, "\n\t\t%s", id);[m
+[32m+[m[32m            fprintf(svg2, "\n\t</text>\n");[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        else if(strcmp(getTipoSema(elementoAux),"s") == 0){[m
+[32m+[m[32m            excluir = percorrer_Semaforo_QD(arvoreSemaforo, id, getFirstElementTree(arvoreSemaforo));[m
+[32m+[m[32m            fprintf (txt, "Semaforo x = %lf y = %lf\n", getXSema (elementoAux), getYSema(elementoAux));[m
+[32m+[m[32m            removeTree(arvoreSemaforo, excluir);[m
+[32m+[m[32m            svg_imprimir_linha(aux, getXSema(elementoAux), getYSema(elementoAux), getXSema(elementoAux), 0, "black");[m
+[32m+[m[32m            fprintf(svg2, "\n\t<text\n\t\tx=\"%lf\"", getXSema(elementoAux) + 10);[m
+[32m+[m[32m            fprintf(svg2, "\n\t\ty=\"0\"");[m
+[32m+[m[32m            fprintf(svg2, "\n\t\tstroke=\"black\"");[m
+[32m+[m[32m            fprintf(svg2, "\n\t\tfill=\"black\">");[m
+[32m+[m[32m            fprintf(svg2, "\n\t\t%s", id);[m
+[32m+[m[32m            fprintf(svg2, "\n\t</text>\n");[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        else if(strcmp(getTipoRB(elementoAux),"rb") == 0){[m
+[32m+[m[32m            excluir = percorrer_RB_QD(arvoreRadioBase, id, getFirstElementTree(arvoreRadioBase));[m
+[32m+[m[32m            fprintf (txt, "Radio base x = %lf y = %lf\n", getXRB (elementoAux), getYRB(elementoAux));[m
+[32m+[m[32m            removeTree(arvoreRadioBase, excluir);[m
+[32m+[m[32m            svg_imprimir_linha(aux, getXRB(elementoAux), getYRB(elementoAux), getXRB(elementoAux), 0, "black");[m
+[32m+[m[32m            fprintf(svg2, "\n\t<text\n\t\tx=\"%lf\"", getXRB(elementoAux) + 10);[m
+[32m+[m[32m            fprintf(svg2, "\n\t\ty=\"0\"");[m
+[32m+[m[32m            fprintf(svg2, "\n\t\tstroke=\"black\"");[m
+[32m+[m[32m            fprintf(svg2, "\n\t\tfill=\"black\">");[m
+[32m+[m[32m            fprintf(svg2, "\n\t\t%s", id);[m
+[32m+[m[32m            fprintf(svg2, "\n\t</text>\n");[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        else if(strcmp(getTipoQuadra(elementoAux),"q") == 0){[m
+[32m+[m[32m            excluir = percorrer_Quadra_QD(arvoreQuadra, id, getFirstElementTree(arvoreQuadra));[m
+[32m+[m[32m            x = getXQuadra(elementoAux) + getWQuadra(elementoAux)/2;[m
+[32m+[m[32m            y = getYQuadra(elementoAux) + getHQuadra(elementoAux)/2;[m
+[32m+[m[32m            fprintf (txt, "Quadra x = %lf y = %lf w = %lf h = %lf\n", getXQuadra (elementoAux), getYQuadra (elementoAux), getWQuadra (elementoAux), getHQuadra (elementoAux));[m
+[32m+[m[32m            removeTree(arvoreQuadra, excluir);[m
+[32m+[m[32m            svg_imprimir_linha(aux, x, y, x, 0, "black");[m
+[32m+[m[32m            fprintf(svg2, "\n\t<text\n\t\tx=\"%lf\"", x + 10);[m
+[32m+[m[32m            fprintf(svg2, "\n\t\ty=\"0\"");[m
+[32m+[m[32m            fprintf(svg2, "\n\t\tstroke=\"black\"");[m
+[32m+[m[32m            fprintf(svg2, "\n\t\tfill=\"black\">");[m
+[32m+[m[32m            fprintf(svg2, "\n\t\t%s", id);[m
+[32m+[m[32m            fprintf(svg2, "\n\t</text>\n");[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m    }[m
+[32m+[m[32m    else{[m
+[32m+[m[32m        fprintf (txt, "Elemento nao encontrado!\n\n");[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mvoid consulta_crd(Tree arvoreQuadra, Tree arvoreHidrante, Tree arvoreSemaforo, Tree arvoreRadioBase, char id[], FILE *txt){[m
+[32m+[m[32m    Elemento elementoAux;[m
+[32m+[m[32m    elementoAux = encontrarElementoArvores(id, arvoreQuadra, arvoreHidrante, arvoreSemaforo, arvoreRadioBase);[m
+[32m+[m
+[32m+[m[32m    fprintf(txt,"crd: cep|id:%s\n", id);[m
+[32m+[m
+[32m+[m[32m    if(elementoAux != NULL){[m
+[32m+[m[32m        if(strcmp(getTipoHidrante(elementoAux),"h") == 0){[m
+[32m+[m[32m            fprintf(txt, "Coordenadas do equipamento: x:%lf,  y:%lf\n", getXHid(elementoAux), getYHid(elementoAux));[m
+[32m+[m[32m            fprintf(txt, "Tipo do equip. urbano: Hidrante\n");[m
+[32m+[m[32m        }[m
+[32m+[m[32m        else if(strcmp(getTipoSema(elementoAux),"s") == 0){[m
+[32m+[m[32m            fprintf(txt, "Coordenadas do equipamento: x:%lf,  y:%lf\n", getXSema(elementoAux), getYSema(elementoAux));[m
+[32m+[m[32m            fprintf(txt, "Tipo do equip. urbano: Semaforo\n");[m
+[32m+[m[32m        }[m
+[32m+[m[32m        else if(strcmp(getTipoRB(elementoAux),"rb") == 0){[m
+[32m+[m[32m            fprintf(txt, "Coordenadas do equipamento: x:%lf,  y:%lf\n", getXRB(elementoAux), getYRB(elementoAux));[m
+[32m+[m[32m            fprintf(txt, "Tipo do equip. urbano: Radio base\n");[m
+[32m+[m[32m        }[m
+[32m+[m[32m        else if(strcmp(getTipoQuadra(elementoAux),"q") == 0){[m
+[32m+[m[32m            fprintf(txt, "Coordenadas do equipamento: x:%lf,  y:%lf\n", getXQuadra(elementoAux), getYQuadra(elementoAux));[m
+[32m+[m[32m            fprintf(txt, "Tipo: Quadra\n");[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }else{[m
+[32m+[m[32m        fprintf(txt, "Elemento nao encontrado!\n");[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mvoid consulta_cbq(Tree arvoreQuadra, FILE* svg2, FILE *txt, double x, double y, double r, char corB[]){[m
+[32m+[m[32m    fprintf(txt, "cbq: - x:%lf - y:%lf - r:%lf - cor da borda:%s\n", x, y, r, corB);[m
+[32m+[m[32m    percorrer_CBQ(arvoreQuadra, x, y, r, corB, txt, svg2, getFirstElementTree(arvoreQuadra));[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mvoid consulta_car(FILE* aux, Tree arvoreQuadra, FILE* txt, double x, double y, double w, double h){[m
+[32m+[m[32m    double areaFinal;[m
+[32m+[m[32m    char a[32];[m
+[32m+[m[32m    Texto text;[m
+[32m+[m
+[32m+[m[32m    fprintf(txt,"car: retangulo: - x:%lf - y:%lf - w:%lf - h:%lf\n",x, y, w, h);[m
+[32m+[m[32m    Forma ret = criarForma("0", "r", x, y, 0, w, h, "black", "none", "1.0");[m
+[32m+[m
+[32m+[m[32m    Lista listaQuadra_aux = create();[m
+[32m+[m
+[32m+[m[32m    percorrer_CAR(aux, txt, arvoreQuadra, getFirstElementTree(arvoreQuadra), x, y, h ,w, listaQuadra_aux);[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    areaFinal = car_quadra_percorrer(listaQuadra_aux);[m
+[32m+[m[32m    svg_imprimir_forma(aux, ret);[m
+[32m+[m[32m    svg_imprimir_linha(aux, x, y, x, 0, "black");[m
+[32m+[m
+[32m+[m[32m    fprintf(txt, "Area total: %lf\n\n", areaFinal);[m
+[32m+[m[32m    sprintf(a, "%lf", areaFinal);[m
+[32m+[m[32m    text = criarTexto("0", "t", x, 0, "white", "black", a);[m
+[32m+[m[32m    svg_imprimirTexto(aux, text);[m
+[32m+[m
+[32m+[m[32m    freeForma(ret);[m
+[32m+[m[32m    freeTexto(text);[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mvoid consulta_cv(Tree arvoreQuadra, Tree arvoreCasos, double n, char cep[32], char face, double num, FILE* aux){[m
+[32m+[m[32m    double xQ, yQ, wQ, hQ, x, y;[m
+[32m+[m[32m    char a[32];[m
+[32m+[m
+[32m+[m[32m    Texto text;[m
+[32m+[m[32m    PosicNo quadraNo = percorrer_Quadra_QD(arvoreQuadra, cep, getFirstElementTree(arvoreQuadra));[m
+[32m+[m[32m    Quadra quadra = getElement(arvoreQuadra, quadraNo);[m
+[32m+[m[32m    Casos casos;[m
+[32m+[m
+[32m+[m[32m    xQ = getXQuadra(quadra);[m
+[32m+[m[32m    yQ = getYQuadra(quadra);[m
+[32m+[m[32m    hQ = getHQuadra(quadra);[m
+[32m+[m[32m    wQ = getWQuadra(quadra);[m
+[32m+[m
+[32m+[m[32m    if (face == 'N'){[m
+[32m+[m		[32mx = xQ + num;[m
+[32m+[m		[32my = yQ + hQ - 11.5;[m
+[32m+[m[41m        [m
+[32m+[m[32m        svg_imprimir_quadrado(aux, x, y, "orange", "orange");[m
+[32m+[m
+[32m+[m	[32m}[m
+[32m+[m	[32melse if (face == 'S'){[m
+[32m+[m		[32mx = xQ + num;[m
+[32m+[m		[32my = yQ;[m
+[32m+[m[32m        svg_imprimir_quadrado(aux, x, y, "orange", "orange");[m
+[32m+[m
+[32m+[m	[32m}[m
+[32m+[m	[32melse if (face == 'L'){[m
+[32m+[m		[32mx = xQ;[m
+[32m+[m		[32my = yQ + num;[m
+[32m+[m[32m        svg_imprimir_quadrado(aux, x, y, "orange", "orange");[m
+[32m+[m
+[32m+[m	[32m}[m
+[32m+[m	[32melse if (face == 'O'){[m
+[32m+[m		[32mx = xQ + wQ -11.5;[m
+[32m+[m		[32my = yQ + num;[m
+[32m+[m[32m        svg_imprimir_quadrado(aux, x, y, "orange", "orange");[m
+[32m+[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m[32m    casos = criarCasos(x, y, n);[m
+[32m+[m[32m    insertTree(arvoreCasos, casos, getXCasos(casos), getYCasos(casos));[m
+[32m+[m
+[32m+[m[32m    sprintf(a, "%.0lf", n);[m
+[32m+[m[32m    x = x + (4.3 / 2.0);[m
+[32m+[m[32m    y = y + (17.0 / 2.0);[m
+[32m+[m
+[32m+[m[32m    text = criarTexto("0", "t", x, y, "white", "white", a);[m
+[32m+[m[32m    svg_imprimirTexto(aux, text);[m
+[32m+[m[32m    freeTexto(text);[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mvoid consulta_soc(Tree arvoreQuadra, Tree arvorePosto, int posto_atendimento, char cep[32], char face, double num, FILE* aux, FILE* txt){[m
+[32m+[m[32m    double xQ, yQ, wQ, hQ, x,y;[m[41m  [m
+[32m+[m
+[32m+[m[32m    PosicNo quadraNo = percorrer_Quadra_QD(arvoreQuadra, cep, getFirstElementTree(arvoreQuadra));[m
+[32m+[m[32m    Quadra quadra = getElement(arvoreQuadra, quadraNo);[m
+[32m+[m
+[32m+[m[32m    fprintf(txt, "soc: k:%d - cep:%s - face:%c - num:%lf\n", posto_atendimento, cep, face, num);[m
+[32m+[m[32m    xQ = getXQuadra(quadra);[m
+[32m+[m[32m    yQ = getYQuadra(quadra);[m
+[32m+[m[32m    hQ = getHQuadra(quadra);[m
+[32m+[m[32m    wQ = getWQuadra(quadra);[m
+[32m+[m
+[32m+[m[32m    if (face == 'N'){[m
+[32m+[m		[32mx = xQ + num;[m
+[32m+[m		[32my = yQ + hQ - 11.5;[m[41m [m
+[32m+[m[32m        svg_imprimir_quadrado(aux, x, y, "blue", "white");[m
+[32m+[m
+[32m+[m	[32m}[m
+[32m+[m	[32melse if (face == 'S'){[m
+[32m+[m		[32mx = xQ + num;[m
+[32m+[m		[32my = yQ;[m
+[32m+[m[32m        svg_imprimir_quadrado(aux, x, y, "blue", "white");[m
+[32m+[m
+[32m+[m	[32m}[m
+[32m+[m	[32melse if (face == 'L'){[m
+[32m+[m		[32mx = xQ;[m
+[32m+[m		[32my = yQ + num;[m
+[32m+[m[32m        svg_imprimir_quadrado(aux, x, y, "blue", "white");[m
+[32m+[m
+[32m+[m	[32m}[m
+[32m+[m	[32melse if (face == 'O'){[m
+[32m+[m		[32mx = xQ + wQ - 11.5;[m
+[32m+[m		[32my = yQ + num;[m
+[32m+[m[32m        svg_imprimir_quadrado(aux, x, y, "blue", "white");[m
+[32m+[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m[32m    Lista listaPosto = create();[m
+[32m+[m[32m    soc_posto_conversao(arvorePosto, getFirstElementTree(arvorePosto), listaPosto);[m
+[32m+[m[32m    soc_percorrer(listaPosto, x, y, posto_atendimento, txt, aux);[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mvoid consulta_ci(double x, double y, double r, FILE *aux, FILE *txt, Tree arvorePosto, Tree arvoreCasos){[m
+[32m+[m[32m    double area, densidadePoligono, casosTotal, categoriaDensidade;[m
+[32m+[m[32m    extern double densidade;[m
+[32m+[m[32m    fprintf (aux, "<circle cx=\"%lf\" cy=\"%lf\" r=\"%lf\" fill=\"none\" stroke=\"green\" stroke-width=\"8\" />\n", x, y, r);[m
+[32m+[m[32m    Lista pontosPoligono;[m
+[32m+[m[32m    fprintf(txt, "ci: X:%.2lf y:%.2lf r:%.2lf\n", x, y, r);[m
+[32m+[m
+[32m+[m[32m    Lista listaCasos = create();[m
+[32m+[m[32m    Lista listaCasosDentro = create();[m
+[32m+[m[41m    [m
+[32m+[m
+[32m+[m[32m    ci_casos_conversao(arvoreCasos, getFirstElementTree(arvoreCasos),listaCasos);[m
+[32m+[m[32m    casosTotal = ci_percorrer(listaCasos, listaCasosDentro, x, y, r, txt);[m
+[32m+[m[32m    pontosPoligono = convexHull(listaCasosDentro);[m
+[32m+[m[32m    percorrerPontosPoligono(pontosPoligono, aux);[m
+[32m+[m[32m    area = calcularArea(pontosPoligono);[m
+[32m+[m
+[32m+[m[32m    if(area == 0){[m
+[32m+[m[32m        fprintf(txt,"Não foi possivel a criação do poligno, quantidade de pontos menor do que 3.\n");[m
+[32m+[m[32m        return;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    densidadePoligono = densidade * (area/1000000);[m
+[32m+[m[32m    categoriaDensidade = (casosTotal / densidadePoligono) * 100000;[m
+[32m+[m
+[32m+[m[32m    Lista listaPosto_ci = create();[m
+[32m+[m[32m    soc_posto_conversao(arvorePosto, getFirstElementTree(arvorePosto), listaPosto_ci);[m
+[32m+[m[41m    [m
+[32m+[m[32m    fprintf(txt, "A área dentro da envoltória convexa:%.2lf metros quadrados.\n",area);[m
+[32m+[m
+[32m+[m[32m    if(categoriaDensidade < 0.1){[m
+[32m+[m[32m        fprintf(aux, "\n\t<polygon points=\n\t\t");[m
+[32m+[m[32m        fprintf(aux,"\"");[m
+[32m+[m[32m        percorrer_poligono_svg (pontosPoligono, aux);[m
+[32m+[m[32m        fprintf(aux,"\"");[m
+[32m+[m[32m        fprintf(aux, "\n\t\tstroke=\"none\"");[m
+[32m+[m[32m        fprintf(aux, "\n\t\tfill=\"%s\"", "cyan");[m
+[32m+[m[32m        fprintf(aux, "\n\t\topacity=\"0.5\"");[m
+[32m+[m[32m        fprintf(aux, "\n\t/>\n");[m
+[32m+[m[32m        fprintf(txt, "A categoria de incidência:A\n");[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    else if(categoriaDensidade < 5.0){[m
+[32m+[m[32m        fprintf(aux, "\n\t<polygon points=\n\t\t");[m
+[32m+[m[32m        fprintf(aux,"\"");[m
+[32m+[m[32m        percorrer_poligono_svg (pontosPoligono, aux);[m
+[32m+[m[32m        fprintf(aux,"\"");[m
+[32m+[m[32m        fprintf(aux, "\n\t\tstroke=\"none\"");[m
+[32
