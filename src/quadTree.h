@@ -22,6 +22,8 @@ typedef void* ItemNode;
 */
 typedef void* PosicNo;
 
+typedef void* Ponto;
+
 typedef void(* getEquipamento)(void*);
 
 typedef void(* getCoordX)(void*);
@@ -29,6 +31,87 @@ typedef void(* getCoordX)(void*);
 typedef void(* getCoordY)(void*);
 
 typedef void (* Escrever)(FILE*,void*);
+
+typedef void *ExtraInfo;
+
+typedef void *funcVisita;
+
+typedef void* funcGetChave(ItemNode);
+
+typedef void visitaNo(ItemNode,ExtraInfo);
+
+
+/*
+* Cria uma lista contendo as chaves de ordenação de todas as informações
+* cujas coordenas associadas (no momento da inserção) estão dentro do
+* retângulo determinado pelo vértices opostos (x1,y1) e (x2,y2).
+*/
+Lista chavesDentroRetanguloQt(Tree qt, double x1, double y1, double x2, double y2);
+
+
+/*
+* Similar à função chavesDentroRetanguloQt(). Retorna a chave cuja
+* coordenada é interna à circunferência de raio r e centro em (x,y).
+*/
+Lista chavesDentroCirculoQt(Tree qt,double x, double y, double r);
+
+
+/*
+* Similar à função pontosDentroRetanguloQt(). Retorna apontadores para
+* nós da árvore contendo informações cuja coordenada está dentro da
+* região de busca.
+*/
+Lista nosDentroRetanguloQt(Tree qt,double x1, double y1,double x2, double y2);
+
+
+/*
+* Similar à função nosDentroRetanguloQt(). Retorna nós internos
+* à circunferência de raio r e centro em (x,y).
+*/
+Lista nosDentroCirculoQt(Tree qt,double x, double y, double r);
+
+/*
+* Percorre a árvore em profundidade. Em cada nó visitado invoca
+* a função f.
+*/
+void percorreProfundidadeQt(Tree qt,funcVisita f,ExtraInfo ei);
+
+
+/*
+* Semelhante a percorreProfundidadeQt. Percorre a árvore em largura.
+*/
+void percorreLarguraQt(Tree qt,funcVisita,ExtraInfo);
+
+
+/*
+* Insere na árvore a informação "pInfo", associada à coordenada referente ao ponto "p".
+* Retorna referência ao nó da árvore onde a pInfo foi armazenada.
+*/
+PosicNo insereQt(Tree qt,Ponto p, ItemNode pInfo);
+
+
+/*
+* Remove da árvore o nó referenciiado por "pNo".
+* "pNo" deve referenciar um nó válido dentro da árvore.
+* Retorna a informação contida na nó removido.
+*/
+ItemNode removeNoQt(Tree qt,PosicNo pNo);
+
+
+/*
+* Retorna uma referência ao nó da árvore associado à coordenada (x,y).
+* Retorna NULL, caso não exista tal nó.
+*/
+PosicNo getNoQt(Tree qt, double x, double y);
+
+
+/*
+* Retorna a informação armazenada na árvore no nó referenciiado por pNo.
+* "pNo" deve referenciar um nó válido dentro da árvore.
+*/
+ItemNode getInfoQt(Tree qt, PosicNo pNo);
+
+
 
 //Numero de quadras dentro do retangulo passado pelo comando dd no .geo
 double numQuadrasDentro;
