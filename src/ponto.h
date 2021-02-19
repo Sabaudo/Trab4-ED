@@ -11,10 +11,9 @@ typedef void *Point;
 /*Cria um ponto*/
 Point createPoint(double x, double y);
 
-
 /*
- * Compara 2 pontos
- */
+* Compara 2 pontos
+*/
 int comparatorPoint(Point p1, Point p2);
 
 /*Inicio Getters e Setters de ponto*/
@@ -27,7 +26,9 @@ void setPointMin(Point p, double x, double y);
 void setPointMax(Point p, double x, double y);
 /*Fim Getters e Setters de ponto*/
 
-/*Libera memoria de um ponto p*/
+/*
+*   Libera memoria de um ponto p
+*/
 void freePoint(Point p);
 
 #endif

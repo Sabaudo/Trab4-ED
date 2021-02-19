@@ -14,7 +14,7 @@
 
 void Ler_arquivo_gry(FILE *qry, FILE *svg2, FILE *txt, Tree arvoreForma, Tree arvoreTexto, Tree arvoreQuadra, Tree arvoreHidrante, 
                     Tree arvoreSemaforo, Tree arvoreRadioBase, Tree arvorePosto, Tree arvoreCasos, HashTable pessoas, 
-                    HashTable moradores, HashTable comercios, char *diretorioSaida){
+                    HashTable moradores, HashTable comercios, char *diretorioSaida, char *entradaGeoNew, char *entradaQryNew){
 
 char operacao[8],corBorda[32],corPreenchimento[32], linha_txt[1024], aux[32];
 char j[32], k[32], face, cep[32], cpf[32], cnpj[32], compl[32], face2[2], tp[32], t[32], sfx[32];
@@ -161,7 +161,7 @@ bool verificador;
 
         else if(strcmp(operacao, "dmprbt") == 0){
             fscanf(qry, "%s %s", t, sfx);
-            consulta_dmprbt(t, sfx, diretorioSaida, arvoreQuadra, arvoreHidrante, arvoreSemaforo, arvoreRadioBase, txt);
+            consulta_dmprbt(t, sfx, diretorioSaida, arvoreQuadra, arvoreHidrante, arvoreSemaforo, arvoreRadioBase, txt, entradaGeoNew, entradaQryNew);
         }  
     }
 

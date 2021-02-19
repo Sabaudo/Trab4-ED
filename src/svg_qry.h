@@ -14,16 +14,15 @@
 #define TREE_TEXT_SIZE 8
 
 /*
- * Realiza a consulta do comando dmprbt do .qry
- * Nao retorna nada
- */
-void consulta_dmprbt(char t[32], char sfx[32], char *diretorioSaida, Tree arvoreQuadra, Tree arvoreHidrante, Tree arvoreSemaforo, Tree arvoreRadioBase, FILE* txt);
-
+*   Realiza a consulta do comando dmprbt do .qry
+*   Nao retorna nada
+*/
+void consulta_dmprbt(char t[32], char sfx[32], char *diretorioSaida, Tree arvoreQuadra, Tree arvoreHidrante, Tree arvoreSemaforo, Tree arvoreRadioBase, FILE* txt, char *entradaGeoNew, char *entradaQryNew);
 
 /*
- * Imprime no svg os nós da arvore a partir de sua posição
- * Nao retorna nada
- */
+*   Imprime no svg os nós da arvore a partir de sua posição
+*   Nao retorna nada
+*/
 void putSVGNode(FILE *file, double x, int y, char *descricao, char *posicao);
 
 #endif

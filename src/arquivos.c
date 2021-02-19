@@ -24,7 +24,9 @@ char *entradaSvg = (char *)malloc((strlen(entradaGeoNew) + 1) * sizeof(char));
         arqsvg = (char *) malloc ((strlen(entradaSvg) + strlen(diretorioSaida) + 2) * sizeof(char));
         sprintf(arqsvg, "%s/%s", diretorioSaida, entradaSvg);
     }
+
     free(entradaSvg);
+    
 return arqsvg; 
 }
 
@@ -64,36 +66,63 @@ entradaSvg2 = (char *)malloc((strlen(entradaGeoNew) + strlen(entradaQryNew) + 1)
         arqsvg2 = (char *) malloc ((strlen(entradaSvg2) + strlen(diretorioSaida) + 2) * sizeof(char));
         sprintf(arqsvg2, "%s/%s", diretorioSaida, entradaSvg2);
     }
+
     free(entradaSvg2);
+
 return arqsvg2; 
 }
 
 //Funcao que cria um terceiro arquivo .svg no diretorio de saida no comando dmprbt 
 
-char * criarSvg3(char entradaGeoNew[], char diretorioSaida[], char *arqsvg){
-int i = 0;
+char * criarSvg3(char entradaGeoNew[], char entradaQryNew[], char entradaSfx[], char diretorioSaida[], char *arqsvg){
+int i = 0, j = 0, k=0;
+char *entradaSvg3 = NULL;
 
-char *entradaSvg = (char *)malloc((strlen(entradaGeoNew) + 10) * sizeof(char));
+entradaSvg3 = (char *)malloc((strlen(entradaGeoNew) + strlen(entradaQryNew) + strlen(entradaSfx)) * sizeof(char));
 
-    while(entradaGeoNew[i] != '\0'){
-		entradaSvg[i] = entradaGeoNew[i];
+    while(entradaGeoNew[i] != '.'){
+		entradaSvg3[i] = entradaGeoNew[i];
 		i++;
     }
+    
+    entradaSvg3[i] = '\0';
 
-    entradaSvg[i] = '\0';
-    strcat(entradaSvg,".svg");
+    strcat(entradaSvg3, "-");
+	i = i +1;
+
+	while(entradaQryNew[j] != '.'){
+		entradaSvg3[i] = entradaQryNew[j];
+		j++;
+		i++;
+	}
+
+    entradaSvg3[i] = '\0';
+
+    strcat(entradaSvg3, "-");
+	i = i +1;
+
+    while(entradaSfx[k] != '\0'){
+		entradaSvg3[i] = entradaSfx[k];
+        k++;
+		i++;
+    }
+    
+    entradaSvg3[i] = '\0';
+
+    strcat(entradaSvg3,".svg");
 
     if(diretorioSaida[strlen(diretorioSaida) - 1] == '/'){
-        arqsvg = (char *) malloc ((strlen(entradaSvg) + strlen(diretorioSaida) + 1) * sizeof(char));
-        sprintf(arqsvg, "%s%s", diretorioSaida, entradaSvg);
-    
+        arqsvg = (char *) malloc ((strlen(entradaSvg3) + strlen(diretorioSaida) + 1) * sizeof(char));
+        sprintf(arqsvg, "%s%s", diretorioSaida, entradaSvg3);
     }
     else{
-        arqsvg = (char *) malloc ((strlen(entradaSvg) + strlen(diretorioSaida) + 2) * sizeof(char));
-        sprintf(arqsvg, "%s/%s", diretorioSaida, entradaSvg);
+        arqsvg = (char *) malloc ((strlen(entradaSvg3) + strlen(diretorioSaida) + 2) * sizeof(char));
+        sprintf(arqsvg, "%s/%s", diretorioSaida, entradaSvg3);
     }
-    free(entradaSvg);
+    free(entradaSvg3);
+
 return arqsvg; 
+
 }
 
 //Funcao que cria o .txt no diretório de saída

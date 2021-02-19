@@ -3,6 +3,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+#include <math.h>
 
 //TAD RADIO BASE
 typedef void* RadioBase;
@@ -64,15 +65,26 @@ char* getSWRB (RadioBase radioBase);
 void freeRadioBase (RadioBase radioBase);
 
 /*
- * Retorna o tipo de um radio base ("rb")
- * Necessita de um radio base criado
- */
+*   Retorna o tipo de um radio base ("rb")
+*   Necessita de um radio base criado
+*/
 char* getTipoRB (RadioBase radioBase);
 
 /*
- * Retorna as informações de um radio base
- */
+*   Retorna as informações de um radio base
+*/
 void getRBInformacao(RadioBase radioBase, char *info, char *posic);
 
+/*
+ *  Calcula a coordenada polar de dois radios bases
+ *  Necessita de dois radios bases criados 
+*/
+double coordPolarRadioBase(RadioBase rb1, RadioBase rb2);
+
+/*
+*   Retorna a orientação de tres radios bases (horario, anti-horario ou colinear)
+*   Necessita de tres radios bases criados 
+*/
+int orientacaoRadioBase(RadioBase rb1, RadioBase rb2, RadioBase rb3);
 
 #endif

@@ -70,3 +70,43 @@ void getHidranteInformacao(Hidrante hidrante, char *info, char *posic){
     sprintf(info, "%s", h->id);
     sprintf(posic, "(%.2lf, %.2lf)", h->x, h->y);
 }
+
+double coordPolarHidrante(Hidrante h1,Hidrante h2){
+  double x1, x2, y1, y2;
+  HidranteImp novaHidrante1, novaHidrante2;
+  
+  novaHidrante1 = (HidranteImp) h1;
+  novaHidrante2 = (HidranteImp) h2;
+
+  x1 = novaHidrante1->x;
+  x2 = novaHidrante2->x;
+  y1 = novaHidrante1->y;
+  y2 = novaHidrante2->y;
+
+  return atan2((y2-y1),(x2-x1));
+}
+
+int orientacaoHidrante(Hidrante q1,Hidrante q2,Hidrante q3){
+  double x1,y1,x2,y2,x3,y3,result;
+  HidranteImp novaHidrante1,novaHidrante2,novaHidrante3;
+
+  novaHidrante1 = (HidranteImp) q1;
+  novaHidrante2 = (HidranteImp) q2;
+  novaHidrante3 = (HidranteImp) q3;
+
+  x1 = novaHidrante1->x;
+  x2 = novaHidrante2->x;
+  x3 = novaHidrante3->x;
+  y1 = novaHidrante1->y;
+  y2 = novaHidrante2->y;
+  y3 = novaHidrante3->y;
+
+  result = (y2-y1)*(x3-x2)-(x2-x1)*(y3-y2);
+
+  if(result > 0)
+    return 1;
+  else if(result < 0)
+    return -1;
+  else
+    return 0;
+}

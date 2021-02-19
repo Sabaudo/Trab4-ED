@@ -7,6 +7,6 @@
 *   necessita de um arquivo .qry, as listas de forma, texto e objetos
 *   nao retorna nada
 */
-void Ler_arquivo_gry(FILE *qry, FILE *svg2, FILE *txt, Tree arvoreForma, Tree arvoreTexto, Tree arvoreQuadra, Tree arvoreHidrante, Tree arvoreSemaforo, Tree arvoreRadioBase, Tree arvorePosto, Tree arvoreCasos, HashTable pessoas, HashTable moradores, HashTable comercios, char *diretorioSaida);
+void Ler_arquivo_gry(FILE *qry, FILE *svg2, FILE *txt, Tree arvoreForma, Tree arvoreTexto, Tree arvoreQuadra, Tree arvoreHidrante, Tree arvoreSemaforo, Tree arvoreRadioBase, Tree arvorePosto, Tree arvoreCasos, HashTable pessoas, HashTable moradores, HashTable comercios, char *diretorioSaida, char *entradaGeoNew, char* entradaQryNew);
 
 #endif

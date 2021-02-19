@@ -3,6 +3,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+#include <math.h>
+
 
 //TAD HIDRANTE
 typedef void* Hidrante;
@@ -64,16 +66,27 @@ char* getSWHid (Hidrante hidrante);
 void freeHidrante (Hidrante hidrante);
 
 /*
- * Retorna o tipo do elemento hidrante ("h")
- * Necessita de um hidrante criado
- */
+*   Retorna o tipo do elemento hidrante ("h")
+*   Necessita de um hidrante criado
+*/
 char* getTipoHidrante (Hidrante hidrante);
 
 /*
- * Retorna as informações de um hidrante
- * Necessita de um hidrante criado
- */
+*   Retorna as informações de um hidrante
+*   Necessita de um hidrante criado
+*/
 void getHidranteInformacao(Hidrante hidrante, char *info, char *posic);
 
+/*
+*   Calcula a coordenada polar de dois hidrantes
+*   Necessita de dois hidrantes criados 
+*/
+double coordPolarHidrante(Hidrante h1,Hidrante h2);
+
+/*
+*   Retorna a orientação de tres hidrantes (horario, anti-horario ou colinear)
+*   Necessita de tres hidrantes criados 
+*/
+int orientacaoHidrante(Hidrante q1,Hidrante q2,Hidrante q3);
 
 #endif

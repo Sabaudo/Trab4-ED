@@ -597,40 +597,40 @@ int processarTree(Tree arv,PosicNo nohArv,Escrever escreverEquip,FILE *arq){
 
 void* percorrer_Quadra_QD(Tree arvoreAux,char id[],PosicNo n){
 
-    if(strcmp(id,getCEPQuadra(getElement(arvoreAux,n)))==0){
-        //return getElement(arvoreAux,n) ;
-        return n;
-    }
-
-    ItemNode resposta = NULL;
+  if(strcmp(id,getCEPQuadra(getElement(arvoreAux,n)))==0){
+    return n;
+  }
+    
+  ItemNode resposta = NULL;
 
   if(leafNe(arvoreAux,n) == 1)
     resposta = percorrer_Quadra_QD(arvoreAux,id,getNe(arvoreAux,n));
 
     if(resposta != NULL){
-        return resposta;
+      return resposta;
     }
 
     if(leafNw((arvoreAux),n) == 1)
     resposta = percorrer_Quadra_QD(arvoreAux,id,getNw(arvoreAux,n));
 
     if(resposta != NULL){
-        return resposta;
+      return resposta;
     }
 
   if(leafSe((arvoreAux),n) == 1)
     resposta = percorrer_Quadra_QD(arvoreAux,id,getSe(arvoreAux,n));
 
     if(resposta != NULL){
-        return resposta;
+      return resposta;
     }
 
   if(leafSw((arvoreAux),n) == 1)
     resposta = percorrer_Quadra_QD(arvoreAux,id,getSw(arvoreAux,n));
 
     if(resposta != NULL){
-        return resposta;
+      return resposta;
     }
+
     return NULL;
 }
 
@@ -641,7 +641,6 @@ void* percorrer_Forma_QD(Tree arvoreAux,char id[],PosicNo n){
   }
 
   if(strcmp(id,getIdForma(getElement(arvoreAux,n)))==0){
-    //return getElement(arvoreAux,n); 
     return n;
   }
 
@@ -685,7 +684,6 @@ void* percorrer_Texto_QD(Tree arvoreAux,char id[],PosicNo n){
   }
    
   if(strcmp(id,getIdForma(getElement(arvoreAux,n)))==0){
-    //return getElement(arvoreAux,n); 
     return n;
   }
 
@@ -725,8 +723,7 @@ void* percorrer_Texto_QD(Tree arvoreAux,char id[],PosicNo n){
 void* percorrer_Hidrante_QD(Tree arvoreAux,char id[],PosicNo n){
 
   if(strcmp(id,getIDHid(getElement(arvoreAux,n)))==0){
-      //return getElement(arvoreAux,n);
-      return n;
+    return n;
   }
 
   ItemNode resposta = NULL;
@@ -764,56 +761,47 @@ void* percorrer_Hidrante_QD(Tree arvoreAux,char id[],PosicNo n){
 
 void* percorrer_Semaforo_QD(Tree arvoreAux,char id[],PosicNo n){
 
-    if(strcmp(id,getIDSema(getElement(arvoreAux,n)))==0){
-       // return getElement(arvoreAux,n);
-       return n;
-    }
+  if(strcmp(id,getIDSema(getElement(arvoreAux,n)))==0){
+    return n;
+  }
 
-    ItemNode resposta = NULL;
+  ItemNode resposta = NULL;
 
-    if(leafNe(arvoreAux,n) == 1)
-        resposta = percorrer_Semaforo_QD(arvoreAux,id,getNe(arvoreAux,n));
+  if(leafNe(arvoreAux,n) == 1)
+    resposta = percorrer_Semaforo_QD(arvoreAux,id,getNe(arvoreAux,n));
 
-    if(resposta != NULL){
-        return resposta;
-    }
+  if(resposta != NULL){
+    return resposta;
+  }
 
+  if(leafNw((arvoreAux),n) == 1)
+    resposta = percorrer_Semaforo_QD(arvoreAux,id,getNw(arvoreAux,n));
 
+  if(resposta != NULL){
+    return resposta;
+  }
 
-    if(leafNw((arvoreAux),n) == 1)
-        resposta = percorrer_Semaforo_QD(arvoreAux,id,getNw(arvoreAux,n));
+  if(leafSe((arvoreAux),n) == 1)
+    resposta = percorrer_Semaforo_QD(arvoreAux,id,getSe(arvoreAux,n));
 
-    if(resposta != NULL){
-        return resposta;
-    }
+  if(resposta != NULL){
+    return resposta;
+  }
 
+  if(leafSw((arvoreAux),n) == 1)
+    resposta = percorrer_Semaforo_QD(arvoreAux,id,getSw(arvoreAux,n));
 
+  if(resposta != NULL){
+    return resposta;
+  }
 
-    if(leafSe((arvoreAux),n) == 1)
-        resposta = percorrer_Semaforo_QD(arvoreAux,id,getSe(arvoreAux,n));
-
-    if(resposta != NULL){
-        return resposta;
-    }
-
-
-
-    if(leafSw((arvoreAux),n) == 1)
-        resposta = percorrer_Semaforo_QD(arvoreAux,id,getSw(arvoreAux,n));
-
-    if(resposta != NULL){
-        return resposta;
-    }
-
-
-    return NULL;
+  return NULL;
 }
 
 void* percorrer_RB_QD(Tree arvoreAux,char id[],PosicNo n){
 
   if(strcmp(id,getIDRB(getElement(arvoreAux,n)))==0){
-      // return getElement(arvoreAux,n);
-      return n;
+    return n;
   }
 
   ItemNode resposta = NULL;

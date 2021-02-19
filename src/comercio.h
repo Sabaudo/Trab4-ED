@@ -13,14 +13,12 @@
 //TAD COMERCIO
 typedef void *Comercio;
 
-
 /*
  * Cria a estrutura comercio
  * Necessita do comando de comercio ser invocado
  * Retorna um comercio
  */
 Comercio criarComercio (char cnpj[], char cpf[], char codt[], char cep[], char face[], int num, char nome[], HashTable tipoLoja, HashTable pessoas, Quadra quadra);
-
 
 /*
  * Retorna o cnpj de um comercio
@@ -29,14 +27,12 @@ Comercio criarComercio (char cnpj[], char cpf[], char codt[], char cep[], char f
  */
 char* getComercioCnpj (Comercio s);
 
-
 /*
  * Retorna o dono de um comercio
  * Necessita de um comercio existente
  * Retorna o dono de um comercio
  */
 char* getComercioOwner (Comercio s);
-
 
 /*
  * Retorna o cep de um comercio
@@ -45,14 +41,12 @@ char* getComercioOwner (Comercio s);
  */
 char* getComercioCep (Comercio s);
 
-
 /*
  * Retorna a face de um comercio
  * Necessita de um comercio existente
  * Retorna a face de um comercio
  */
 char* getComercioFace (Comercio s);
-
 
 /*
  * Retorna o nome de um comercio
@@ -61,14 +55,12 @@ char* getComercioFace (Comercio s);
  */
 char* getComercioName (Comercio s);
 
-
 /*
  * Retorna o numero de um comercio
  * Necessita de um comercio existente
  * Retorna o numero de um comercio
  */
 int getComercioNum (Comercio s);
-
 
 /*
  * Retorna o codt de um comercio
@@ -77,14 +69,12 @@ int getComercioNum (Comercio s);
  */
 char* getComercioCodt (Comercio s);
 
-
 /*
  * Retorna o x de um comercio
  * Necessita de um comercio existente
  * Retorna o x de um comercio
  */
 double getComercioX(Comercio s);
-
 
 /*
  * Retorna o y de um comercio
@@ -93,14 +83,12 @@ double getComercioX(Comercio s);
  */
 double getComercioY(Comercio s);
 
-
 /*
  * Retorna o tipo de um comercio
  * Necessita de um comercio existente
  * Retorna o tipo de um comercio
  */
 TipoComercio getComercioType(Comercio s);
-
 
 /*
  * Da free num comercio

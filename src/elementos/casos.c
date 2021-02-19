@@ -11,7 +11,6 @@ typedef struct StCasos *CasosImp;
 Casos criarCasos(double x, double y, double n){
     CasosImp novo;
     novo = (CasosImp)malloc (sizeof (struct StCasos));
-
     novo->x = x;
     novo->y = y;
     novo->n = n;

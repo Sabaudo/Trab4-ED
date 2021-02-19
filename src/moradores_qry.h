@@ -18,7 +18,6 @@
  */
 void consulta_m (FILE *arqTxt, HashTable residents, char cep[]);
 
-
 /*
  * Realiza a consulta do comando dm
  * Necessita do comando dm ter sido chamado
@@ -26,14 +25,11 @@ void consulta_m (FILE *arqTxt, HashTable residents, char cep[]);
  */
 void consulta_dm(char *cpf, HashTable moradores, FILE *arqTxt, FILE *arqSvg);
 
-
 /*
  * Realiza a consulta do comando mud
  * Necessita do comando mud ter sido chamado
  * Retorna nada
  */
 void consulta_mud(FILE *arqTxt, FILE *arqSvg, HashTable moradores, char cpf[], char cep[], char face[], int num, char compl[], Tree arvoreQuadra);
-
-
 
 #endif

@@ -105,4 +105,42 @@ void getQuadraInformacao(Quadra b, char *info, char *posic){
     QuadraImp quadra = (QuadraImp) b;
     sprintf(info, "%s", quadra->cep);
     sprintf(posic, "(%.2lf, %.2lf)", quadra->x, quadra->y);
+} 
+
+double coordPolarQuadra(Quadra q1,Quadra q2){
+  double x1,x2,y1,y2;
+  QuadraImp novaQuadra1,novaQuadra2;
+  novaQuadra1 = (QuadraImp)q1;
+  novaQuadra2 = (QuadraImp)q2;
+
+  x1 = novaQuadra1->x;
+  x2 = novaQuadra2->x;
+  y1 = novaQuadra1->y;
+  y2 = novaQuadra2->y;
+
+  return atan2((y2-y1),(x2-x1));
+}
+
+int orientacaoQuadra(Quadra q1,Quadra q2,Quadra q3){
+  double x1,y1,x2,y2,x3,y3,result;
+  QuadraImp novaQuadra1,novaQuadra2,novaQuadra3;
+
+  novaQuadra1 = (QuadraImp)q1;
+  novaQuadra2 = (QuadraImp)q2;
+  novaQuadra3 = (QuadraImp)q3;
+  x1 = novaQuadra1->x;
+  x2 = novaQuadra2->x;
+  x3 = novaQuadra3->x;
+  y1 = novaQuadra1->y;
+  y2 = novaQuadra2->y;
+  y3 = novaQuadra3->y;
+
+  result = (y2-y1)*(x3-x2)-(x2-x1)*(y3-y2);
+
+  if(result > 0)
+    return 1;
+  else if(result < 0)
+    return -1;
+  else
+    return 0;
 }

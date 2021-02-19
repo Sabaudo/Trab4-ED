@@ -12,6 +12,8 @@
 #include"pessoa.h"
 #include"comercio.h"
 #include"moradores.h"
+#include"ordenacao.h"
+
 
 int main (int argc, char *argv[]){
     int i = 1, nq = 1000;
@@ -195,6 +197,12 @@ int main (int argc, char *argv[]){
     //Lendo arquivo .geo
     Ler_arquivo_geo(geo, arvoreForma, arvoreTexto, arvoreQuadra, arvoreHidrante, arvoreSemaforo, arvoreRadioBase, arvorePosto, quadraTable);
 
+    //Ordenação das arvores
+    arvore_quadra_balanceada(arvoreQuadra);
+    arvore_semaforo_balanceada(arvoreSemaforo);
+	arvore_hidrante_balanceada(arvoreHidrante);
+	arvore_radioBase_balanceada(arvoreRadioBase);
+
     //Lendo arquivo .pm
     if(entradaPm != NULL){
         Ler_arquivo_pm(pm, pessoas, quadraTable, moradores);
@@ -229,7 +237,7 @@ int main (int argc, char *argv[]){
         //Lendo arquivo .qry
         fprintf(svg2, "<svg>\n");
         Ler_arquivo_gry(qry, svg2, txt, arvoreForma, arvoreTexto, arvoreQuadra, arvoreHidrante, arvoreSemaforo, arvoreRadioBase, 
-                        arvorePosto, arvoreCasos, pessoas, moradores, comercios, diretorioSaida);
+                        arvorePosto, arvoreCasos, pessoas, moradores, comercios, diretorioSaida, entradaGeoNew, entradaQryNew);
         fprintf(svg2, "\n</svg>");  
     }
 

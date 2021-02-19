@@ -3,6 +3,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+#include <math.h>
+
 
 //TAD SEMAFORO
 typedef void* Semaforo;
@@ -64,15 +66,26 @@ char* getSWSema (Semaforo semaforo);
 void freeSemaforo (Semaforo semaforo);
 
 /*
- * Retorna o tipo de um semaforo ("s")
- * Necessita de um semaforo criado
- */
+*   Retorna o tipo de um semaforo ("s")
+*   Necessita de um semaforo criado
+*/
 char* getTipoSema(Semaforo semaforo);
 
 /*
- * Retorna as informações de um semaforo
- */
+*   Retorna as informações de um semaforo
+*/
 void getSemaforoInformacao(Semaforo semaforo, char *info, char *posic);
 
+/*
+*   Calcula a coordenada polar de dois semaforos
+*   Necessita de dois semaforos criados 
+*/
+double coordPolarSemaforo(Semaforo s1, Semaforo s2);
+
+/*
+*   Retorna a orientação de tres semaforos (horario, anti-horario ou colinear)
+*   Necessita de tres semaforos criados 
+*/
+int orientacaoSemaforo(Semaforo s1, Semaforo s2, Semaforo s3);
 
 #endif

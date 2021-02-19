@@ -189,14 +189,12 @@ int comparar(const void *caso1, const void *caso2);
  */
 Dist getDist(Dist distAux);
 
-
 /*
  * retorna uma distancia de posto de saude atraves de uma lista ordenada por shellsort
  * necessita de um posto de saude
  * retorna uma distancia
  */
 double getDistancia(Dist distAux);
-
 
 /*
  * calcula a area de um poligono convexo
@@ -205,14 +203,12 @@ double getDistancia(Dist distAux);
  */
 double calcularArea(Lista listaPoligno);
 
-
 /*
  * percorre uma lista casos, para poder printar as linhas laterais do poligono
  * necessita de uma lista de casos ordenada
  * nao retorna nada
  */
 void percorrer_poligono_svg (Lista listaPoligono, FILE*aux);
-
 
 /*
  * verifica se ha algum posto de saude num poligono de pior categoria (categoria E)
@@ -221,14 +217,12 @@ void percorrer_poligono_svg (Lista listaPoligono, FILE*aux);
  */
 bool flagPointInside(Lista pontosPoligono, Lista postos);
 
-
 /*
  * calcula e desenha o ponto centroide de um poligono convexo para inserir um posto de saude
  * necessita do poligono convexo, e de sua area
  * nao retorna nada
  */
 void centroide(Lista listaPoligono, double area, FILE *aux);
-
 
 /*
  * Remove as quadras pelo comando dq
@@ -237,14 +231,12 @@ void centroide(Lista listaPoligono, double area, FILE *aux);
  */
 void dq_quadra_remover(Lista listaQuadra, Tree arvoreQuadra);
 
-
 /*
  * Percorre uma lista temporaria pelo comando car para calcular a area
  * Necessita de uma lista criada e do comando car ter sido invocado
  * Retorna a area final
  */
 double car_quadra_percorrer(Lista listaQuadra);
-
 
 /*
  * Remove uma quadra pelo comando catac
@@ -253,14 +245,12 @@ double car_quadra_percorrer(Lista listaQuadra);
  */
 void catac_quadra_remover(Lista removerQuadra, Tree arvoreQuadra);
 
-
 /*
  * Remove um hidrante pelo comando catac
  * Necessita do comando cata ter sido chamado
  * Retorna nada
  */
 void catac_hidrante_remover(Lista removerHidrante, Tree arvoreHidrante);
-
 
 /*
  * Remove um semaforo pelo comando catac
@@ -269,14 +259,12 @@ void catac_hidrante_remover(Lista removerHidrante, Tree arvoreHidrante);
  */
 void catac_semaforo_remover(Lista removerSemaforo, Tree arvoreSemaforo);
 
-
 /*
  * Remove uma radio base pelo comando catac
  * Necessita do comando cata ter sido chamado
  * Retorna nada
  */
 void catac_radioBase_remover(Lista removerRadioBase, Tree arvoreRadioBase);
-
 
 /*
  * Remove um morador pelo comando catac
@@ -285,18 +273,11 @@ void catac_radioBase_remover(Lista removerRadioBase, Tree arvoreRadioBase);
  */
 void catac_morador_remover(Lista removerMorador, HashTable moradores);
 
-
 /*
  * Remove um comercio pelo comando catac
  * Necessita do comando cata ter sido chamado
  * Retorna nada
  */
 void catac_comercio_remover(Lista removerComercio, HashTable comercio);
-
-
-
-
-
-
 
 #endif

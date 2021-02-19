@@ -75,3 +75,44 @@ void getSemaforoInformacao(Semaforo semaforo, char *info, char *posic){
     sprintf(posic, "(%.2lf, %.2lf)", s->x, s->y);
 }
 
+
+double coordPolarSemaforo(Semaforo s1, Semaforo s2){
+  double x1, x2, y1, y2;
+  SemaforoImp novaSemaforo1, novaSemaforo2;
+  
+  novaSemaforo1 = (SemaforoImp) s1;
+  novaSemaforo2 = (SemaforoImp) s2;
+
+  x1 = novaSemaforo1->x;
+  x2 = novaSemaforo2->x;
+  y1 = novaSemaforo1->y;
+  y2 = novaSemaforo2->y;
+
+  return atan2((y2-y1),(x2-x1));
+}
+
+int orientacaoSemaforo(Semaforo s1, Semaforo s2, Semaforo s3){
+  double x1,y1,x2,y2,x3,y3,result;
+  SemaforoImp novaSemaforo1,novaSemaforo2,novaSemaforo3;
+
+  novaSemaforo1 = (SemaforoImp) s1;
+  novaSemaforo2 = (SemaforoImp) s2;
+  novaSemaforo3 = (SemaforoImp) s3;
+
+  x1 = novaSemaforo1->x;
+  x2 = novaSemaforo2->x;
+  x3 = novaSemaforo3->x;
+  y1 = novaSemaforo1->y;
+  y2 = novaSemaforo2->y;
+  y3 = novaSemaforo3->y;
+
+  result = (y2-y1)*(x3-x2)-(x2-x1)*(y3-y2);
+
+  if(result > 0)
+    return 1;
+  else if(result < 0)
+    return -1;
+  else
+    return 0;
+}
+

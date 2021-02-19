@@ -13,14 +13,12 @@ typedef void* Elemento;
 */
 void consulta_o(Tree arvoreForma, char j[], char k[], FILE*txt, FILE *aux_txt);
 
-
 /*
 *   realiza a operação do i? do arquivo .qry
 *   necessita do comando i? ter sido chamado
 *   nao retorna nada
 */
 void consulta_i(Tree arvoreForma, char j[], double x, double y, FILE *txt, FILE *aux_txt);
-
 
 /*
 *   realiza a operação do pnt do arquivo .qry
@@ -49,7 +47,6 @@ void consulta_delf(Tree arvoreForma, Tree arvoreTexto, char j[], FILE *txt);
 *   nao retorna nada
 */
 void consulta_delf_2(Tree arvoreForma, Tree arvoreTexto, int j_num, int k_num, FILE *txt);
-
 
 /*
 *   realiza a operação dq do arquivo .qry

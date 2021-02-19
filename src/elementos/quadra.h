@@ -4,7 +4,7 @@
 #include<stdlib.h>
 #include<string.h>
 #include "../hashTable.h"
-
+#include <math.h>
 
 //TAD QUADRA
 typedef void* Quadra;
@@ -87,21 +87,32 @@ void setcorBordaQuadra(Quadra quadra, char corBorda[]);
 void freeQuadra (Quadra quadra);
 
 /*
- * Retorna o tipo de uma quadra ("q")
- * Necessita de uma quadra criada
- */
+*   Retorna o tipo de uma quadra ("q")
+*   Necessita de uma quadra criada
+*/
 char* getTipoQuadra (Quadra quadra);
 
 /*
- * Retorna os moradores de uma quadra na hashtable
- * Necessita de uma hashtable, quadra e moradores criados
- */
+*   Retorna os moradores de uma quadra na hashtable
+*   Necessita de uma hashtable, quadra e moradores criados
+*/
 HashTable getQuadraMoradores(Quadra b);
 
 /*
- * Retorna as informações de uma quadra
- */
+*   Retorna as informações de uma quadra
+*/
 void getQuadraInformacao(Quadra b, char *info, char *posic);
 
+/*
+*   Calcula a coordenada polar de duas quadras
+*   Necessita de duas quadras criadas 
+*/
+double coordPolarQuadra(Quadra q1,Quadra q2);
+
+/*
+*   Retorna a orientação de tres quadras (horario, anti-horario ou colinear)
+*   Necessita de tres quadras criadas 
+*/
+int orientacaoQuadra(Quadra q1,Quadra q2,Quadra q3);
 
 #endif

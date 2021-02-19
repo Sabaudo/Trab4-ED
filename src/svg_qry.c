@@ -52,12 +52,12 @@ static double _generateTreeSVG(Tree arvore, FILE *file, PosicNo node, int height
 }
 
 
-void consulta_dmprbt(char t[32], char *sfx, char *diretorioSaida, Tree arvoreQuadra, Tree arvoreHidrante, Tree arvoreSemaforo, Tree arvoreRadioBase, FILE* txt ){
+void consulta_dmprbt(char t[32], char *sfx, char *diretorioSaida, Tree arvoreQuadra, Tree arvoreHidrante, Tree arvoreSemaforo, Tree arvoreRadioBase, FILE* txt, char *entradaGeoNew, char *entradaQryNew){
     char * arqsvg3 = NULL;
     FILE *svg3;
     double x;
 
-    arqsvg3 = criarSvg3(sfx, diretorioSaida, arqsvg3);	
+    arqsvg3 = criarSvg3(entradaGeoNew, entradaQryNew, sfx, diretorioSaida, arqsvg3);	
     svg3 = fopen(arqsvg3,"w+");
   
     fprintf(svg3, "<svg xmlns=\"http://www.w3.org/2000/svg\" weight=\"10000\" height=\"10000\">\n");

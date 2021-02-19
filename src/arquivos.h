@@ -32,7 +32,6 @@ char * criarTxt(char entradaGeoNew [], char entradaQryNew[],char diretorioSaida[
  * necessita do comando dmprbt ter sido invocado
  * retorna um arquivo svg
  */
-char * criarSvg3(char entradaGeoNew[], char diretorioSaida[], char *arqsvg);
-
+char * criarSvg3(char entradaGeoNew[], char entradaQryNew[], char entradaSfx[], char diretorioSaida[], char *arqsvg);
 
 #endif 

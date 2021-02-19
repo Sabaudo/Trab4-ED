@@ -25,21 +25,17 @@ int getHashTableSize(HashTable h);
  */
 ListNode getHashNode(HashTable h, int i);
 
-
 /*
  * Retorna o proximo node de uma hastable
  * Necessita de uma hastable criada
  */
 ListNode getHashNodeNext(ListNode n);
 
-
 /*
  * Retorna o elemento de um node da hastable
  * Necessita de uma hastable criada
  */
 Element getHashNodeElement(ListNode n);
-
-
 
 /* Cria e retorna uma tabela de espalhamento
  * Necessita do tamanho da hashtable
